@@ -1,0 +1,105 @@
+.body {
+    fill: linear-gradient(69deg, #FFE7E7 22.91%, #FBF5F6 70.57%);
+    filter: drop-shadow(0 9px 14.9px rgba(0, 0, 0, 0.25));
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.main-menu-text {
+    color: #000;
+    font-family: "Secret Formula";
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3.3px;
+    padding: 91px 450px 319px 86px;
+}
+
+.you-text {
+    color: #C70742;
+}
+
+.chop-img {
+    position: absolute;
+    z-index: 1;
+}
+
+.chop1 {
+    width: 548.183px;
+    height: 975.414px;
+    transform: rotate(71deg);
+    flex-shrink: 0;
+    aspect-ratio: 548.18/975.41;
+}
+
+.chop2 {
+    width: 548.183px;
+    height: 975.414px;
+    transform: rotate(82deg);
+    flex-shrink: 0;
+    aspect-ratio: 548.18/975.41;
+}
+
+.main-content-right {
+    position: relative;
+}
+
+.special-container {
+    position: relative;
+}
+
+.dish1 {
+    width: 710px;
+    height: 722px;
+    padding-top: 16px;
+    padding-left: 263px;
+}
+
+.special-button {
+    width: 242px;
+    height: 95.437px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 3px solid #FFD2D2;
+    background: rgba(189, 189, 189, 0.00);
+    color: #FFD2D2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.order-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+.dish2 {
+    width: 332px;
+    height: 332px;
+    flex-shrink: 0;
+}
+
+.order-button {
+    width: 242px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 109px;
+    border: 3px solid #F1B4C6;
+    background: #F1B4C6;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
