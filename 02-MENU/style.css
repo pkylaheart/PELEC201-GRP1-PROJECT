@@ -1,13 +1,29 @@
-.body {
-    fill: linear-gradient(69deg, #FFE7E7 22.91%, #FBF5F6 70.57%);
-    filter: drop-shadow(0 9px 14.9px rgba(0, 0, 0, 0.25));
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.body {
+    background-color: #f9e7e7; /* light pink background */
+    color: #000000;
+}
+
+/* Menu Section */
 .menu {
+    flex-shrink: 0;
+    background: linear-gradient(69deg, #FFE7E7 22.91%, #FBF5F6 70.57%);
+    filter: drop-shadow(0 9px 14.9px rgba(0, 0, 0, 0.25));
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 73px;
     padding: 50px 80px;
+}
+
+.main-content-left {
+    position: relative;
 }
 
 .main-menu-text {
@@ -18,47 +34,42 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -3.3px;
-    padding: 91px 450px 319px 86px;
+    width: 1050px;
+    padding: 91px 250px 319px 86px;
 }
 
 .you-text {
     color: #C70742;
 }
 
-.chop-img {
-    position: absolute;
-    z-index: 1;
-}
-
-.chop1 {
-    width: 548.183px;
-    height: 975.414px;
-    transform: rotate(71deg);
-    flex-shrink: 0;
-    aspect-ratio: 548.18/975.41;
-}
-
-.chop2 {
-    width: 548.183px;
-    height: 975.414px;
-    transform: rotate(82deg);
-    flex-shrink: 0;
-    aspect-ratio: 548.18/975.41;
-}
-
 .main-content-right {
+    display: flex;
     position: relative;
+    flex-direction: column;    
+    justify-content: center;
+    gap: 40px;
+    padding-right: 80px;
 }
 
-.special-container {
-    position: relative;
+.img-container {
+    position: absolute;
+    top: 50px;
 }
 
 .dish1 {
+    top: -10px;
+    right: 10px;
     width: 710px;
     height: 722px;
-    padding-top: 16px;
-    padding-left: 263px;
+    pointer-events: none; 
+    position: absolute;
+}
+
+.dish2 {
+    height: 332px;
+    flex-shrink: 0;
+    pointer-events: none;
+    position: absolute;
 }
 
 .special-button {
@@ -75,17 +86,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-.order-container {
-    position: relative;
-    margin-top: 50px;
-}
-
-.dish2 {
-    width: 332px;
-    height: 332px;
-    flex-shrink: 0;
+    z-index: 2;
+    margin-top: 20px;
 }
 
 .order-button {
@@ -102,4 +104,45 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 20px;
+}
+
+.chop-img-container {
+    position: absolute;
+    top: 300px;  
+    left: 0;
+    width: 100%;
+    pointer-events: none; 
+}
+
+.chop1 {
+    position: absolute;
+    width: 548.183px;
+    height: 975.414px;
+    top: 195px;        
+    left: 120px;         
+    transform: rotate(77deg);
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.chop2 {
+    position: absolute;
+    width: 548.183px;
+    height: 975.414px;
+    top: 325px;
+    left: 150px;
+    transform: rotate(82deg);
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.bottom-rectangle {
+    width: 100%;
+    height: 133px;
+    background: #FBF4F6;
+    box-shadow: 0 8px 7px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin-top: -77px;
+    z-index: -1;
 }
