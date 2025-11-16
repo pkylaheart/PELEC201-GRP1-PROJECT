@@ -51,28 +51,38 @@
     padding-right: 80px;
 }
 
-.img-container {
-    position: absolute;
-    top: 50px;
+.dish-wrapper {
+    position: relative;
+    width: 750px;
+    height: 750px;
 }
 
 .dish1 {
-    top: -10px;
-    right: 10px;
-    width: 710px;
-    height: 722px;
-    pointer-events: none; 
     position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .dish2 {
-    height: 332px;
-    flex-shrink: 0;
-    pointer-events: none;
     position: absolute;
+    bottom: -50px;
+    right: 430px;
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
 }
 
 .special-button {
+    position: absolute;
+    bottom: 280px;
+    right: 650px;
     width: 242px;
     height: 95.437px;
     flex-shrink: 0;
@@ -86,11 +96,13 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    z-index: 2;
-    margin-top: 20px;
+    z-index: 3;
 }
 
 .order-button {
+    position: absolute;
+    bottom: -45px;
+    right: 260px; 
     width: 242px;
     height: 100px;
     flex-shrink: 0;
@@ -104,7 +116,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 20px;
+    z-index: 4;
 }
 
 .chop-img-container {
@@ -119,7 +131,7 @@
     position: absolute;
     width: 548.183px;
     height: 975.414px;
-    top: 195px;        
+    top: 115px;        
     left: 120px;         
     transform: rotate(77deg);
     opacity: 0.95;
@@ -131,7 +143,7 @@
     width: 548.183px;
     height: 975.414px;
     top: 325px;
-    left: 150px;
+    left: 120px;
     transform: rotate(82deg);
     opacity: 0.95;
     z-index: 1;
@@ -145,4 +157,163 @@
     position: relative;
     margin-top: -145px;
     z-index: -1;
+}
+
+.cards-carousel-menu {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.circle-arrow {
+    width: 66px;
+    height: 66px;
+    flex-shrink: 0;
+    background: var(--pink-light);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--pink-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.cards-container {
+    width: 1250px;
+    height: 592px;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.cards-tracker {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+
+.menu-card {
+    width: 301.567px;
+    height: 482.144px;
+    background: #FBF5F7;
+    border-radius: 20px;
+    padding: 20px;
+    flex-shrink: 0;
+    text-align: center;
+    transition: transform 0.25s ease;
+}
+
+.center-card {
+    transform: scale(1.18);
+}
+
+.card-img {
+    width: 224px;
+    height: 225px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    color: #F894B0;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.big-title {
+    color: #F894B0;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.card-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.big-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 55px 0;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background: #FFCDCD;
+}
+
+.active-dot {
+    width: 25px;
+    height: 25px;
+    background: #F894B0;
+}
+
+.divider-line {
+    width: 1160px;
+    height: 6px;
+    background: #000;
+}
+
+.special-dish-menu {
+    display: flex;
+    width: 1180px;
+    height: 798.71px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+    padding-bottom: 0.29px;
+    justify-content: center;
+}
+
+.special-menu-title {
+    height: 73.71px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #C70742;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
 }
