@@ -87,9 +87,9 @@
     height: 95.437px;
     flex-shrink: 0;
     border-radius: 100px;
-    border: 3px solid #FFD2D2;
+    border: 4px solid #eb7878;
     background: rgba(189, 189, 189, 0.00);
-    color: #FFD2D2;
+    color: #eb7878;
     text-align: center;
     font-family: Inter;
     font-size: 36px;
@@ -107,9 +107,9 @@
     height: 100px;
     flex-shrink: 0;
     border-radius: 109px;
-    border: 3px solid #F1B4C6;
-    background: #F1B4C6;
-    color: #FFF;
+    border: 4px solid #ff92b3;
+    background: #ff92b3;
+    color: #fff;
     text-align: center;
     font-family: Inter;
     font-size: 36px;
@@ -117,6 +117,18 @@
     font-weight: 700;
     line-height: normal;
     z-index: 4;
+}
+
+.special-button:hover {
+    background-color: #eb7878;
+    color: #fff;
+    transform: 2s;
+}
+
+.order-button:hover {
+    background-color: transparent;
+    color: #ff92b3;
+    transform: 2s;
 }
 
 .chop-img-container {
@@ -305,7 +317,7 @@
     justify-content: center;
 }
 
-.special-menu-title {
+.menu-title {
     height: 73.71px;
     flex-shrink: 0;
     align-self: stretch;
@@ -316,4 +328,77 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
+}
+
+.special-items {
+    display: flex;
+    padding: 73px 54px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 50px;
+    background: #F894B0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 100px;
+}
+
+.special-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.special-item-img {
+    width: 187.764px;
+    height: 186px;
+    object-fit: cover;
+}
+
+.special-item-info h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.special-item-info p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.bottom-order-now {
+    width: 161px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 74px;
+    border: 3px solid #C70742;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #C70742;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bottom-order-now:hover {
+    background-color: #C70742;
+    color: #fff;
+    transform: 2s;
 }
