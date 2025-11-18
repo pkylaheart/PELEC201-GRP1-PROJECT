@@ -305,6 +305,14 @@
     background: #000;
 }
 
+.menu-section {
+    display: none;
+}
+
+.menu-section.active {
+    display: flex;
+}
+
 .special-dish-menu {
     display: flex;
     width: 1180px;
