@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+
+<body>
+    <main>
+        <section class="menu">
+            <div class="main-content-left">
+                <h1 class="main-menu-text">
+                    LET US BRING <br>
+                    THE TASTE <br>
+                    OF JAPAN <br>
+                    TO <span class="you-text">YOU</span> <br>
+                </h1>
+            </div>
+
+            <div class="main-content-right">
+                <div class="dish-wrapper">
+                    <img src="../_ASSETS/main-dish-img1.png" alt="dish" class="dish1">
+                    <img src="../_ASSETS/main-dish-img2.png" alt="dish" class="dish2">
+
+                    <button class="special-button">Specials</button>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+            <div class="chop-img-container">
+                <img src="../_ASSETS/chop1.png" alt="chopstick" class="chop1">
+                <img src="../_ASSETS/chop2.png" alt="chopstick" class="chop2">
+            </div>
+        </section>
+        <div class="bottom-rectangle"></div>
+    </main>
+
+    <section class="cards-carousel-menu">
+        <div class="carousel">
+            <button id="right-arrow" class="circle-arrow">&lt;</button>
+
+            <div class="cards-container">
+                <div class="cards-tracker" id="cards-Track">
+
+                    <div class="menu-card menu-card-drinks">
+                        <img src="../_ASSETS/Cards-ASSETS/Drinks-Img.png" alt="drinks" class="card-img">
+                        <h3 class="card-title">Drinks</h3>
+                        <p class="card-text">Refreshing drinks to complement your meal.</p>
+                    </div>
+                    <div class="menu-card menu-card-special center-card">
+                        <img src="../_ASSETS/Cards-ASSETS/Spe.Dish-Img.png" alt="special dish" class="card-img">
+                        <h3 class="card-title big-title">Special Dish</h3>
+                        <p class="card-text big-text">Delicious dishes that will leave you wanting more.</p>
+                    </div>
+                    <div class="menu-card menu-card-rice-bowl-bento">
+                        <img src="../_ASSETS/Cards-ASSETS/RiceBowl&Bento-Img.png" alt="rice bowl & bento" class="card-img">
+                        <h3 class="card-title">Rice Bowl & Bento</h3>
+                        <p class="card-text">Hearty rice bowls and bento boxes for a fulfilling meal.</p>
+                    </div>
+
+                    <div class="menu-card menu-sushi-maki-rolls">
+                        <img src="../_ASSETS/Cards-ASSETS/Sushi&Maki-Img.png" alt="sushi & maki rolls" class="card-img">
+                        <h3 class="card-title">Sushi & Maki Rolls</h3>
+                        <p class="card-text">Fresh and flavorful sushi and maki rolls.</p>
+                    </div>
+                    <div class="menu-card menu-card-noodles-drinks">
+                        <img src="../_ASSETS/Cards-ASSETS/Noodles&Grills-Img.png" alt="noodles & grills" class="card-img">
+                        <h3 class="card-title">Noodles & Grills</h3>
+                        <p class="card-text">Savory noodles and grilled dishes to satisfy your cravings.</p>
+                    </div>
+                    <div class="menu-card menu-sides-snacks">
+                        <img src="../_ASSETS/Cards-ASSETS/Sides&Snacks-Img.png" alt="sides & snacks" class="card-img">
+                        <h3 class="card-title">Sides & Snacks</h3>
+                        <p class="card-text">Tasty sides and snacks to complement your main course.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <button id="left-arrow" class="circle-arrow">&gt;</button>
+        </div>
+
+        <div class="pagination-dots">
+            <span class="dot active-dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <hr class="divider-line" aria-hidden="true">
+
+        <div class="menu-items">
+            <div class="special-dish-menu" id="special-dish">
+                <h1 class="menu-title">Special Dish</h1>
+                <div class="special-items">
+
+                    <div class="special-card">
+                        <img src="../_ASSETS/Items-Img/tempura.png" alt="tempura" class="special-item-img">
+                        <div class="special-item-info">
+                            <h3>TEMPURA</h3>
+                            <p>₱ 240</p>
+
+                            <h3>EBIFURAI</h3>
+                            <p>₱ 220</p>
+                        </div>
+                    </div>
+
+                    <div class="special-card">
+                        <img src="../_ASSETS/Items-Img/gyoza.png" alt="gyoza" class="special-item-img">
+                        <div class="special-item-info">
+                            <h3>GYOZA SHRIMP</h3>
+                            <p>₱ 170</p>
+
+                            <h3>GYOZA PORK</h3>
+                            <p>₱ 150</p>
+                        </div>
+                    </div>
+
+                    <div class="special-card">
+                        <img src="../_ASSETS/Items-Img/ikafurai.png" alt="ikafurai" class="special-item-img">
+                        <div class="special-item-info">
+                            <h3>IKAFURAI</h3>
+                            <p>₱ 200</p>
+
+                            <h3>KARAAGE</h3>
+                            <p>₱ 220</p>
+                        </div>
+                    </div>
+
+
+                    <div class="special-card">
+                        <img src="../_ASSETS/Items-Img/tofu.png" alt="tofu" class="special-item-img">
+                        <div class="special-item-info">
+                            <h3>TOFU STEAK</h3>
+                            <p>₱ 140</p>
+
+                            <h3>YAKISOBA</h3>
+                            <p>₱ 170</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="rice-bowl-menu" id="rice-bowl">
+                <h1 class="menu-title">Rice Bowl & Bento</h1>
+                <div class="rice-bowl-items">
+
+                    <h2 class="subtitle">Rice Bowl</h2>
+
+                    <div class="rice-cards">
+                        <div class="rice-bowl-card">
+                            <img src="../_ASSETS/Items-Img/gyudon.png" alt="gyudon" class="rice-bowl-item-img">
+                            <div class="rice-bowl-item-info">
+                                <h3>GYUDON</h3>
+                                <p>₱ 195</p>
+
+                                <h3>KATSUDON</h3>
+                                <p>₱ 200</p>
+                            </div>
+                        </div>
+
+                        <div class="rice-bowl-card">
+                            <img src="../_ASSETS/Items-Img/tonkatsu-curry.png" alt="tonkatsu-curry" class="rice-bowl-item-img">
+                            <div class="rice-bowl-item-info">
+                                <h3>TONKATSU-CURRY</h3>
+                                <p>₱ 195</p>
+
+                                <h3>SPICY CHEESE ENOKI</h3>
+                                <p>₱ 170</p>
+                            </div>
+                        </div>
+
+                        <div class="rice-bowl-card">
+                            <img src="../_ASSETS/Items-Img/tonkatsu.png" alt="tonkatsu" class="rice-bowl-item-img">
+                            <div class="rice-bowl-item-info">
+                                <h3>TONKATSU</h3>
+                                <p>₱ 275</p>
+
+                                <h3>FISHKATSU</h3>
+                                <p>₱ 280</p>
+                            </div>
+                        </div>
+
+                        <div class="rice-bowl-card">
+                            <img src="../_ASSETS/Items-Img/pork-bibimbap.png" alt="pork-bibimbap" class="rice-bowl-item-img">
+                            <div class="rice-bowl-item-info">
+                                <h3>PROK BIBIMBAP</h3>
+                                <p>₱ 280</p>
+
+                                <h3>BEEF BIBIMBAP</h3>
+                                <p>₱ 280</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-items">
+
+                    <h2 class="subtitle">Bento</h2>
+                    <p class="side-note">RICE, 2 CALIFORNIA MAKI, KANI SALAD, RED ICE TEA, CHOICE ONE (1) DISH</p>
+
+                    <div class="bento-card">
+                        <div class="rice-bowl-card">
+                            <img src="../_ASSETS/Items-Img/bento-tonkatsu.png" alt="bento-tonkatsu" class="rice-bowl-item-img">
+                            <div class="rice-bowl-item-info">
+                                <h3>TONKATSU</h3>
+                                <p>₱ 270</p>
+
+                                <h3>FISHKATSU</h3>
+                                <p>₱ 270</p>
+                            </div>
+                        </div>
+
+                        <div class="rice-bowl-card">
+                            <img src="../_ASSETS/Items-Img/bento-gyudon.png" alt="bento-gyudon" class="rice-bowl-item-img">
+                            <div class="rice-bowl-item-info">
+                                <h3>GYUDON</h3>
+                                <p>₱ 295</p>
+
+                                <h3>TEMPURA</h3>
+                                <p>₱ 340</p>
+                            </div>
+                        </div>
+
+                        <div class="rice-bowl-card">
+                            <img src="../_ASSETS/Items-Img/bento-wagyu.png" alt="wagyu" class="rice-bowl-item-img">
+                            <div class="rice-bowl-item-info">
+                                <h3>WAGYU</h3>
+                                <p>₱ 340</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="bottom-order-now">ORDER NOW</button>
+        </div>
+    </section>
+
+    <script src="Menu.js" defer></script>
+</body>
+
+<html
