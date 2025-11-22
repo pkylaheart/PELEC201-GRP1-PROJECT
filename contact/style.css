@@ -35,9 +35,10 @@ h2 {
     padding: 0 20px;
 }
 
-/* Left column */
+/* Left column: Set it to block to avoid flex properties */
 .left-column {
     flex: 1;
+    display: block;  /* Ensure it's block-level */
 }
 
 /* Left paragraph */
@@ -108,4 +109,14 @@ h2 {
 /* Bold for Kawa span */
 .Kawa {
     font-weight: bold;
+}
+
+/* Styling the image */
+.desc-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Limit the image size */
+    display: block; /* Ensure it's a block-level element */
+    margin-top: 20px; /* Add space between the paragraph and the image */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
 }
