@@ -234,6 +234,71 @@
     box-shadow: 0 5px 10.9px 0 rgba(0, 0, 0, 0.41);
 }
 
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cards-menu-container {
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-title {
+    width: 209px;
+    height: 15px;
+    flex-shrink: 0;
+    color: #F894B0;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cards-menu-wrapper .cards-menu-item {
+    list-style: none;
+}
+
+.cards-menu-wrapper .cards-menu-item {
+    height: auto;
+    transition: 0.2s ease;
+    text-decoration: none;
+    user-select: none;
+}
+
+.cards-menu-wrapper .cards-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards-menu-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    width: 301.567px;
+    height: 482.144px;
+    flex-shrink: 0;
+    background: #FBF5F7;
+}
+
+.cards-img {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 225px;
+    height: 245px;
+}
+
 @media (max-width: 1024px) {
     .menu-navigation-bar {
         padding: 0 20px;
