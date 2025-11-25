@@ -7,7 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="new-css.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="new-menu.css">
+
+    <!-- SWIPERJS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 
 <body class="menu-body">
@@ -66,21 +71,66 @@
         <section class="cards-section">
 
             <!-- CARDS CONTAINER -->
-            <div class="cards-menu-container">
+            <div class="cards-menu-container swiper">
 
                 <!-- CARDS WRAPPER -->
                 <div class="cards-menu-wrapper">
 
-                    <!-- CARDS ITEM -->
-                    <div class="cards-menu-item">
-                        <img src="../_ASSETS/Cards-ASSETS/Drinks-Img.png" alt="drinks" class="cards-img">
-                        <h3 class="card-title">Drinks</h3>
-                        <p class="card-text">Refreshing drinks to complement your meal.</p>
-                    </div>
+                    <!-- CARDS LIST -->
+                    <ul class="card-menu-list swiper-wrapper">
+
+                        <!-- CARDS -->                       
+                        <li class="card-menu-item swiper-slide">
+                            <img src="../_ASSETS/Cards-ASSETS/Drinks-Img.png" alt="drinks" class="cards-img">
+                            <h3 class="card-title">Drinks</h3>
+                            <p class="card-text">Refreshing drinks to complement your meal</p>                            
+                        </li>
+
+                        <li class="card-menu-item active-item swiper-slide">
+                            <img src="../_ASSETS/Cards-ASSETS/Spe.Dish-Img.png" alt="special dish" class="cards-img active-img">
+                            <h3 class="card-title active-title">Special Dish</h3>
+                            <p class="card-text active-text">Delicious dishes that will leave you wanting more</p>                            
+                        </li>
+
+                        <li class="card-menu-item swiper-slide">
+                            <img src="../_ASSETS/Cards-ASSETS/RiceBowl&Bento-Img.png" alt="rice bowl and bento" class="cards-img">
+                            <h3 class="card-title">Rice Bowl & Bento</h3>
+                            <p class="card-text">Hearty rice bowls and bento boxes for a fulfilling meal</p>                            
+                        </li>
+
+                        <li class="card-menu-item swiper-slide">
+                            <img src="../_ASSETS/Cards-ASSETS/Sushi&Maki-Img.png" alt="sushi and maki" class="cards-img">
+                            <h3 class="card-title">Sushi & Maki Rolls</h3>
+                            <p class="card-text">Fresh and flavorful sushi and maki rolls</p>                            
+                        </li>
+
+                        <li class="card-menu-item swiper-slide">
+                            <img src="../_ASSETS/Cards-ASSETS/Noodles&Grills-Img.png" alt="noodles and grills" class="cards-img">
+                            <h3 class="card-title">Noodles & Grills</h3>
+                            <p class="card-text">Savory noodles and grilled dishes to satisfy your cravings</p>                            
+                        </li>
+
+                        <li class="card-menu-item swiper-slide">
+                            <img src="../_ASSETS/Cards-ASSETS/Sides&Snacks-Img.png" alt="sides and snacks" class="cards-img">
+                            <h3 class="card-title">Sides & Snacks</h3>
+                            <p class="card-text">Tasty sides and snacks to complement your main course</p>                            
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- SWIPERJS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- JS SCRIPT -->
+    <script src="new-menu.js"></script>
 </body>
 
 </html>
