@@ -1,3 +1,9 @@
+/* IMPORTING FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Lilita+One&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +52,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .contact-btn {
@@ -167,7 +174,7 @@
 .order-button {
     position: absolute;
     bottom: -45px;
-    right: 260px; 
+    right: 280px; 
     width: 212px;
     height: 75.437px;
     flex-shrink: 0;
@@ -234,70 +241,73 @@
     box-shadow: 0 5px 10.9px 0 rgba(0, 0, 0, 0.41);
 }
 
+/* CARDS MENU SECTION */
+
 .cards-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     max-width: 1400px;
+    height: 1754px;
+    padding: 20px 0;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .cards-menu-container {
     max-width: 1400px;
-    position: relative;
-    margin: 0 auto;
-    padding: 0 20px;
+    height: 620px;
+    padding: 0 100px;
 }
 
-.card-title {
-    width: 209px;
-    height: 15px;
-    flex-shrink: 0;
+.cards-menu-wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card-menu-list .card-menu-item {
+    user-select: none;
+    width: 350px;
+    height: auto;
+    background: transparent;
+    padding: 41px 39px;
+    border-radius: 19px;
+    /* box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.25); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 480px;
+
+}
+
+.card-menu-list .cards-img {
+    width: 100%;
+}
+
+.card-menu-list .card-title {
     color: #F894B0;
     text-align: center;
     font-family: "Lilita One";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 29px;
+    padding: 18px 0;
 }
 
-.cards-menu-wrapper .cards-menu-item {
-    list-style: none;
+.card-menu-list .card-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;    
 }
 
-.cards-menu-wrapper .cards-menu-item {
-    height: auto;
-    transition: 0.2s ease;
-    text-decoration: none;
-    user-select: none;
+.card-menu-item {
+    height: 480px;
+    margin: 0 -15;
 }
 
-.cards-menu-wrapper .cards-img {
-    width: 100%;
-    object-fit: cover;
+.active-item {
+    background: #fff0f5;
+    transform: scale(1.05) !important;
+    transition: 0.3s ease;
 }
 
-.cards-menu-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 30px;
-    width: 301.567px;
-    height: 482.144px;
-    flex-shrink: 0;
-    background: #FBF5F7;
-}
 
-.cards-img {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 225px;
-    height: 245px;
-}
 
 @media (max-width: 1024px) {
     .menu-navigation-bar {
