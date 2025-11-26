@@ -253,7 +253,7 @@
 
 .cards-menu-container {
     max-width: 1400px;
-    height: 620px;
+    height: 670px;
     padding: 0 100px;
 }
 
@@ -275,6 +275,8 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 480px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -296,6 +298,11 @@
     font-size: 16px;    
 }
 
+.cards-img {
+    max-width: 224px;
+    max-height: 245px;
+}
+
 .card-menu-item {
     height: 480px;
     margin: 0 -15;
@@ -303,11 +310,24 @@
 
 .active-item {
     background: #fff0f5;
-    transform: scale(1.05) !important;
+    transform: scale(1.2) !important;
     transition: 0.3s ease;
 }
 
+.active-img {
+    max-width: 268px;
+    max-height: 293px;
+}
 
+.swiper-pagination-bullet {
+    width: 18px !important;
+    height: 18px !important;
+    background-color: #F894B0 !important;
+}
+
+.swiper-pagination-active {
+    background-color: #F894B0 !important;
+}
 
 @media (max-width: 1024px) {
     .menu-navigation-bar {
