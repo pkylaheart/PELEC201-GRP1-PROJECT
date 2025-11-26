@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #f9e7e7; /* light pink background */
+    color: #000000;
+}
+
+/* Menu Section */
+.menu {
+    flex-shrink: 0;
+    background: linear-gradient(69deg, #FFE7E7 22.91%, #FBF5F6 70.57%);
+    filter: drop-shadow(0 9px 14.9px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 73px;
+    padding: 50px 80px;
+}
+
+.main-content-left {
+    position: relative;
+}
+
+.main-menu-text {
+    color: #000;
+    font-family: "Secret Formula";
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3.3px;
+    width: 1050px;
+    padding: 91px 250px 319px 86px;
+}
+
+.you-text {
+    color: #C70742;
+}
+
+.main-content-right {
+    display: flex;
+    position: relative;
+    flex-direction: column;    
+    justify-content: center;
+    gap: 40px;
+    padding-right: 80px;
+}
+
+.dish-wrapper {
+    position: relative;
+    width: 750px;
+    height: 750px;
+}
+
+.dish1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.dish2 {
+    position: absolute;
+    bottom: -50px;
+    right: 430px;
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.special-button {
+    position: absolute;
+    bottom: 280px;
+    right: 650px;
+    width: 242px;
+    height: 95.437px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 4px solid #eb7878;
+    background: rgba(189, 189, 189, 0.00);
+    color: #eb7878;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 3;
+}
+
+.order-button {
+    position: absolute;
+    bottom: -45px;
+    right: 260px; 
+    width: 242px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 109px;
+    border: 4px solid #ff92b3;
+    background: #ff92b3;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 4;
+}
+
+.special-button:hover {
+    background-color: #eb7878;
+    color: #fff;
+    transform: 2s;
+}
+
+.order-button:hover {
+    background-color: transparent;
+    color: #ff92b3;
+    transform: 2s;
+}
+
+.chop-img-container {
+    position: absolute;
+    top: 300px;  
+    left: 0;
+    width: 100%;
+    pointer-events: none; 
+}
+
+.chop1 {
+    position: absolute;
+    width: 548.183px;
+    height: 975.414px;
+    top: 115px;        
+    left: 120px;         
+    transform: rotate(77deg);
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.chop2 {
+    position: absolute;
+    width: 548.183px;
+    height: 975.414px;
+    top: 325px;
+    left: 120px;
+    transform: rotate(82deg);
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.bottom-rectangle {
+    width: 100%;
+    height: 133px;
+    background: #FBF4F6;
+    box-shadow: 0 8px 7px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin-top: -145px;
+    z-index: -1;
+}
+
+.cards-carousel-menu {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.circle-arrow {
+    width: 66px;
+    height: 66px;
+    flex-shrink: 0;
+    background: var(--pink-light);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--pink-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.cards-container {
+    width: 1250px;
+    height: 592px;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.cards-tracker {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+
+.menu-card {
+    width: 301.567px;
+    height: 482.144px;
+    background: #FBF5F7;
+    border-radius: 20px;
+    padding: 20px;
+    flex-shrink: 0;
+    text-align: center;
+    transition: transform 0.25s ease;
+}
+
+.center-card {
+    transform: scale(1.18);
+}
+
+.card-img {
+    width: 224px;
+    height: 225px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    color: #F894B0;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.big-title {
+    color: #F894B0;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.card-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.big-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 55px 0;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background: #FFCDCD;
+}
+
+.active-dot {
+    width: 25px;
+    height: 25px;
+    background: #F894B0;
+}
+
+.divider-line {
+    width: 1160px;
+    height: 6px;
+    background: #000;
+}
+
+.menu-section {
+    display: none;
+}
+
+.menu-section.active {
+    display: flex;
+}
+
+.special-dish-menu {
+    display: flex;
+    width: 1180px;
+    height: 798.71px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+    padding-bottom: 0.29px;
+    justify-content: center;
+}
+
+.menu-title {
+    height: 73.71px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #C70742;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.special-items {
+    display: flex;
+    padding: 73px 54px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 50px;
+    background: #F894B0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 100px;
+}
+
+.special-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.special-item-img {
+    width: 187.764px;
+    height: 186px;
+    object-fit: cover;
+}
+
+.special-item-info h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.special-item-info p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.bottom-order-now {
+    width: 161px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 74px;
+    border: 3px solid #C70742;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #C70742;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bottom-order-now:hover {
+    background-color: #C70742;
+    color: #fff;
+    transform: 2s;
+}
+
+.rice-bowl-menu {
+    display: flex;
+    width: 1180px;
+    height: 798.71px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+    padding-bottom: 0.29px;
+    justify-content: center;
+}
+
+.rice-bowl-items {
+    align-self: stretch;
+    border-radius: 50px;
+    background: #F894B0;
+    padding: 73px 54px;
+}
+
+.rice-cards {
+    display: flex;
+    padding: 73px 54px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 50px;
+    background: #F894B0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 100px;
+}
+
+.rice-bowl-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.subtitle {
+    color: #000;
+    text-align: center;
+    font-family: "Vulgar Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.rice-bowl-item-img{
+    width: 187.764px;
+    height: 186px;
+    object-fit: cover;
+}
+
+.rice-bowl-item-info h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.rice-bowl-item-info p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.bento-items {
+    align-self: stretch;
+    border-radius: 50px;
+    background: #FFCDCD;
+    padding: 73px 54px;
+}
+
+.bento-cards {
+    display: flex;
+    padding: 73px 54px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 50px;
+    background: #FFCDCD;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 100px;
+}
+
+.side-note {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
