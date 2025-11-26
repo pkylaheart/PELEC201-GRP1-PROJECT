@@ -319,6 +319,14 @@
     max-height: 293px;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+    width: 66px !important;
+    height: 66px !important;
+    background: #000 !important;
+    
+}
+
 .swiper-pagination-bullet {
     width: 18px !important;
     height: 18px !important;
