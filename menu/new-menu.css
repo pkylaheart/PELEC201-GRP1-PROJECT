@@ -246,9 +246,10 @@
 .cards-section {
     width: 100%;
     max-width: 1400px;
-    height: 1754px;
+    height: 7000px;
     padding: 20px 0;
     margin: 0 auto;
+    margin-top: 130px;
 }
 
 .cards-menu-container {
@@ -323,7 +324,8 @@
 .swiper-button-next {
     width: 66px !important;
     height: 66px !important;
-    background: transparent !important;
+    background: #eb7878 !important;
+    border-radius: 50%;
 }
 
 .swiper-button-prev::after,
@@ -334,12 +336,67 @@
 .swiper-pagination-bullet {
     width: 18px !important;
     height: 18px !important;
-    background-color: #F894B0 !important;
+    background-color: transparent !important;
 }
 
-.swiper-pagination-active {
-    background-color: #F894B0 !important;
+.line {
+    width: 100%;
+    height: 6px;
+    background: #000;
+    margin-top: 44px;
 }
+
+.main-menu-list {
+    margin-top: 130px;
+    max-width: 1400px;
+    max-height: 3500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.main-menu-title {
+    color: #C70742;
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-menu-container {
+    display: flex;
+    padding: 73px 54px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 50px;
+    background: #F894B0;
+}
+
+.main-menu-item {
+    display: flex;
+    gap: 75px;
+}
+
+.main-menu-img {
+    width: 187px;
+    height: 187px;
+    object-fit: cover;
+}
+
+.main-menu-text {
+    display: flex;
+    width: 170.35px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
 
 @media (max-width: 1024px) {
     .menu-navigation-bar {
