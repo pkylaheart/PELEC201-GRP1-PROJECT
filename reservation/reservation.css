@@ -1,0 +1,4 @@
+/* safer gradient stops */
+body {
+    background: linear-gradient(180deg, #FFF6F6 0%, #e78c8c 90%);
+}
