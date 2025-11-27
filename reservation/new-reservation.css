@@ -1,3 +1,8 @@
+/* ===========================
+   Original / exported CSS
+   (kept as you sent it)
+   =========================== */
+
 .DESKTOP-reservation {
   overflow: hidden;
   background: linear-gradient(
@@ -741,6 +746,7 @@
   aspect-ratio: 1;
   object-fit: cover;
 }
+
 /* Inject original CSS code here */
 
 .DESKTOP-reservation .select-field,
@@ -836,3 +842,263 @@
 .DESKTOP-reservation .footnote address {
   font-style: normal;
 }
+
+/* ===========================
+   Overrides & Fixes (stack fields,
+   visible inputs, remove tiny rotations,
+   responsive)
+   =========================== */
+
+/* Remove tiny design-tool rotations for cleaner layout */
+.DESKTOP-reservation .group,
+.DESKTOP-reservation .group-2,
+.DESKTOP-reservation .group-3,
+.DESKTOP-reservation .group-4,
+.DESKTOP-reservation .div,
+.DESKTOP-reservation .rectangle-2,
+.DESKTOP-reservation .rectangle-3,
+.DESKTOP-reservation .line,
+.DESKTOP-reservation .line-2,
+.DESKTOP-reservation .users,
+.DESKTOP-reservation .calendar,
+.DESKTOP-reservation .clock,
+.DESKTOP-reservation .clipboard {
+  transform: none !important;
+}
+
+/* Make the card comfortable to read:
+   keep absolute placement on large screens,
+   but give padding and auto height so fields can stack */
+.DESKTOP-reservation .card {
+  position: absolute;
+  /* keep approximate left/top but use fixed pixel width for predictability */
+  width: 420px;
+  top: 338px;
+  left: 34.86%;
+  height: auto;
+  padding: 28px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 28px;
+  box-shadow: 3px 6px 4px #00000040;
+  display: block;
+}
+
+/* Stack each field with consistent spacing */
+.DESKTOP-reservation .group,
+.DESKTOP-reservation .group-2,
+.DESKTOP-reservation .group-3 {
+  position: relative;
+  height: 56px;     /* uniform row height */
+  margin: 12px 0;   /* space between rows */
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+/* Textarea group taller */
+.DESKTOP-reservation .group-4 {
+  position: relative;
+  height: 120px;
+  margin: 12px 0;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+/* Background shapes fill the group's area */
+.DESKTOP-reservation .div,
+.DESKTOP-reservation .rectangle-2,
+.DESKTOP-reservation .rectangle-3 {
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  background-color: #fffafa;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+/* Normalized icons: left-aligned and vertically centered */
+.DESKTOP-reservation .users,
+.DESKTOP-reservation .calendar,
+.DESKTOP-reservation .clock,
+.DESKTOP-reservation .clipboard,
+.DESKTOP-reservation .line,
+.DESKTOP-reservation .line-2 {
+  position: absolute;
+  left: 12px;               /* icon padding */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Labels sit to the right of the icons and are vertically centered */
+.DESKTOP-reservation .text-wrapper,
+.DESKTOP-reservation .text-wrapper-2,
+.DESKTOP-reservation .text-wrapper-3,
+.DESKTOP-reservation .p {
+  position: absolute;
+  left: 44px;               /* icon 24px + gap 8-12px */
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  display: block;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #000;
+  pointer-events: none;     /* label non-interactive - inputs overlay them */
+  margin: 0;
+  padding: 0;
+}
+
+/* Native form controls: full-size, visible, and padded so they don't overlap icons */
+.DESKTOP-reservation .select-field,
+.DESKTOP-reservation .date-field,
+.DESKTOP-reservation .time-field {
+  position: absolute;
+  inset: 0;                 /* fill the row */
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  z-index: 2;
+  opacity: 1;               /* visible by default */
+  padding-left: 44px;       /* leave space for icons/labels */
+  box-sizing: border-box;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.DESKTOP-reservation .textarea-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  z-index: 2;
+  opacity: 1;
+  padding: 14px 16px 14px 44px; 
+  box-sizing: border-box;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.DESKTOP-reservation .select-field:focus,
+.DESKTOP-reservation .date-field:focus,
+.DESKTOP-reservation .time-field:focus,
+.DESKTOP-reservation .textarea-field:focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .numbers,
+.DESKTOP-reservation .element-wrapper {
+  cursor: pointer;
+  border: none;
+  transition: transform 0.08s ease, opacity 0.08s ease;
+}
+
+.DESKTOP-reservation .numbers:hover,
+.DESKTOP-reservation .element-wrapper:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.DESKTOP-reservation .numbers:active,
+.DESKTOP-reservation .element-wrapper:active {
+  transform: translateY(0);
+}
+
+.DESKTOP-reservation .button:hover {
+  opacity: 0.9;
+}
+
+.DESKTOP-reservation .navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .navbar a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .navbar a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .footnote a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .footnote a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote address {
+  font-style: normal;
+}
+
+
+  .DESKTOP-reservation {
+    min-width: 0;        
+    padding: 24px;
+  }
+
+  .DESKTOP-reservation .card {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 640px;
+    margin-top: 40px;
+    padding: 24px;
+  }
+
+  .DESKTOP-reservation .petals-right,
+  .DESKTOP-reservation .bundok,
+  .DESKTOP-reservation .cherry-blossom {
+    display: none;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .DESKTOP-reservation .card {
+    width: calc(100% - 32px);
+    padding: 18px;
+  }
+
+  .DESKTOP-reservation .group,
+  .DESKTOP-reservation .group-2,
+  .DESKTOP-reservation .group-3 {
+    height: 52px;
+    margin: 10px 0;
+  }
+
+  .DESKTOP-reservation .group-4 {
+    height: 140px;
+  }
+
+  .DESKTOP-reservation .frame {
+    left: 16px;
+    width: calc(100% - 32px);
+    gap: 20px;
+  }
+
+  .DESKTOP-reservation .kawa-logo,
+  .DESKTOP-reservation .kawa-logo-2 {
+    left: 16px;
+  }
+}
+
+
