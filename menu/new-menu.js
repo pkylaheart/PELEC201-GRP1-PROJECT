@@ -30,3 +30,10 @@ new Swiper('.cards-menu-wrapper', {
   },
 
 });
+
+document.getElementById(".main-order-btn").addEventListener("click", function() {
+    document.getElementById(".menu-order-btn").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+});
