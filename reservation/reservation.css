@@ -1,4 +1,7 @@
-/* safer gradient stops */
 body {
     background: linear-gradient(180deg, #FFF6F6 0%, #e78c8c 90%);
+}
+
+.reservation-frame{
+    border: 2px solid rgb(252, 252, 252);
 }
