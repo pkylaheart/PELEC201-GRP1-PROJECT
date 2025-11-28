@@ -1,0 +1,1104 @@
+/* ===========================
+   Original / exported CSS
+   (kept as you sent it)
+   =========================== */
+
+.DESKTOP-reservation {
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 246, 246, 1) 0%,
+    rgba(255, 208, 208, 1) 100%
+  );
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1463px;
+  position: relative;
+}
+
+.DESKTOP-reservation .bundok {
+  position: absolute;
+  top: 667px;
+  left: 0;
+  width: 1445px;
+  height: 462px;
+  aspect-ratio: 3.13;
+}
+
+.DESKTOP-reservation .petals-right {
+  position: absolute;
+  top: 107px;
+  left: 948px;
+  width: 670px;
+  height: 444px;
+  aspect-ratio: 1.51;
+}
+
+.DESKTOP-reservation .petals-left {
+  position: absolute;
+  top: 507px;
+  left: 0;
+  width: 304px;
+  height: 319px;
+  aspect-ratio: 0.95;
+}
+
+.DESKTOP-reservation .cherry-blossom-top {
+  position: absolute;
+  top: 141px;
+  left: -4px;
+  width: 523px;
+  height: 338px;
+  aspect-ratio: 1.55;
+}
+
+.DESKTOP-reservation .rectangle {
+  position: absolute;
+  top: 910px;
+  left: 258px;
+  width: 888px;
+  height: 130px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 8px 7px 4px #00000040;
+  opacity: 0.3;
+}
+
+.DESKTOP-reservation .img {
+  position: absolute;
+  top: 215px;
+  left: 404px;
+  width: 593px;
+  height: 627px;
+  aspect-ratio: 0.95;
+}
+
+.DESKTOP-reservation .card {
+  position: absolute;
+  width: 27.78%;
+  top: 338px;
+  left: 34.86%;
+  height: 347px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 28px;
+  box-shadow: 3px 6px 4px #00000040;
+}
+
+.DESKTOP-reservation .group {
+  margin-left: 8.76%;
+  margin-right: 8.47%;
+  flex: 1;
+  max-height: 41.6px;
+  position: relative;
+  margin-top: 65.3px;
+  transform: rotate(0.10deg);
+}
+
+.DESKTOP-reservation .div {
+  width: 99.37%;
+  height: 41px;
+  background-color: #fffafa;
+  transform: rotate(-0.10deg);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  border-radius: 28px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.DESKTOP-reservation .line {
+  position: absolute;
+  width: 12.08%;
+  top: 2px;
+  left: 14.21%;
+  height: 40px;
+  transform: rotate(-0.10deg);
+  object-fit: cover;
+}
+
+.DESKTOP-reservation .users {
+  position: absolute;
+  width: 6.04%;
+  top: 11px;
+  left: 3.94%;
+  height: 20px;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .text-wrapper {
+  position: absolute;
+  width: 35.04%;
+  top: 13px;
+  left: 18.72%;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-0.10deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .chevron-down {
+  position: absolute;
+  width: 6.04%;
+  top: 10px;
+  left: 90.63%;
+  height: 20px;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .group-2 {
+  margin-left: 8.78%;
+  margin-right: 8.45%;
+  flex: 1;
+  max-height: 41.6px;
+  position: relative;
+  margin-top: 11.0px;
+  transform: rotate(0.10deg);
+}
+
+.DESKTOP-reservation .rectangle-2 {
+  position: absolute;
+  width: 99.37%;
+  top: 1px;
+  left: 0;
+  height: 41px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: 1px solid;
+  border-color: #000000;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .calendar {
+  position: absolute;
+  width: 6.04%;
+  top: 10px;
+  left: 3.92%;
+  height: 20px;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .text-wrapper-2 {
+  position: absolute;
+  width: 9.67%;
+  top: 12px;
+  left: 18.69%;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-0.10deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .chevron-down-2 {
+  top: 12px;
+  left: 90.60%;
+  position: absolute;
+  width: 6.04%;
+  height: 20px;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .group-3 {
+  margin-left: 8.8%;
+  margin-right: 8.44%;
+  flex: 1;
+  max-height: 41.6px;
+  position: relative;
+  margin-top: 15.0px;
+  transform: rotate(0.10deg);
+}
+
+.DESKTOP-reservation .clock {
+  position: absolute;
+  width: 6.04%;
+  top: 11px;
+  left: 3.89%;
+  height: 20px;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .text-wrapper-3 {
+  position: absolute;
+  width: 9.97%;
+  top: 13px;
+  left: 18.67%;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-0.10deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .chevron-down-3 {
+  top: 11px;
+  left: 90.58%;
+  position: absolute;
+  width: 6.04%;
+  height: 20px;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .group-4 {
+  margin-left: 8.8%;
+  margin-right: 8.43%;
+  flex: 1;
+  max-height: 94.56px;
+  position: relative;
+  margin-top: 19.0px;
+  transform: rotate(0.10deg);
+}
+
+.DESKTOP-reservation .group-5 {
+  position: absolute;
+  width: 99.40%;
+  top: 1px;
+  left: 0;
+  height: 95px;
+}
+
+.DESKTOP-reservation .rectangle-3 {
+  width: 99.98%;
+  height: 93px;
+  background-color: #ffffff;
+  transform: rotate(-0.24deg);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  border-radius: 28px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.DESKTOP-reservation .line-2 {
+  position: absolute;
+  width: 27.63%;
+  top: 3px;
+  left: 14.28%;
+  height: 91px;
+  transform: rotate(-0.10deg);
+  object-fit: cover;
+}
+
+.DESKTOP-reservation .p {
+  position: absolute;
+  width: 69.77%;
+  top: 22px;
+  left: 18.66%;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-0.10deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .clipboard {
+  position: absolute;
+  width: 6.04%;
+  top: 31px;
+  left: 3.87%;
+  height: 20px;
+  transform: rotate(-0.10deg);
+}
+
+.DESKTOP-reservation .numbers {
+  position: absolute;
+  top: 734px;
+  left: 615px;
+  width: 176px;
+  height: 43px;
+  background-color: #f8a0b8;
+  border-radius: 52px;
+  box-shadow: 0px 4px 5px #00000040;
+}
+
+.DESKTOP-reservation .element {
+  position: absolute;
+  width: 65.79%;
+  height: 65.79%;
+  top: 18.42%;
+  left: 15.79%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .element-wrapper {
+  position: absolute;
+  top: 956px;
+  left: 921px;
+  width: 176px;
+  height: 43px;
+  background-color: #f79fb8;
+  border-radius: 52px;
+  box-shadow: 0px 4px 5px #00000040;
+}
+
+.DESKTOP-reservation .table-is-kept-for {
+  position: absolute;
+  width: 26.53%;
+  top: 956px;
+  left: 22.92%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .navbar {
+  position: absolute;
+  width: 100.14%;
+  top: -1px;
+  left: 0;
+  height: 102px;
+  background-color: #fee8e8;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.DESKTOP-reservation .kawa-logo {
+  top: 10px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: calc(50.00% - 657px);
+  aspect-ratio: 1;
+}
+
+.DESKTOP-reservation .frame {
+  display: flex;
+  width: 29.61%;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 12px 0px;
+  position: absolute;
+  top: 28px;
+  left: 34.26%;
+}
+
+.DESKTOP-reservation .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .group-6 {
+  position: relative;
+  width: 116px;
+  height: 27.5px;
+  margin-right: -2.00px;
+}
+
+.DESKTOP-reservation .text-wrapper-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .line-3 {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  width: 114px;
+  height: 1px;
+}
+
+.DESKTOP-reservation .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 125px;
+  height: 51px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-space-200);
+  padding: var(--size-space-300);
+  position: absolute;
+  top: 26px;
+  left: calc(50.00% + 562px);
+  background-color: var(--color-background-brand-default);
+  border-radius: var(--size-radius-200);
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--color-border-brand-default);
+}
+
+.DESKTOP-reservation .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  color: var(--color-text-brand-on-brand);
+  line-height: var(--single-line-body-base-line-height);
+  font-family: var(--single-line-body-base-font-family);
+  font-weight: var(--single-line-body-base-font-weight);
+  font-size: var(--single-line-body-base-font-size);
+  letter-spacing: var(--single-line-body-base-letter-spacing);
+  white-space: nowrap;
+  font-style: var(--single-line-body-base-font-style);
+}
+
+.DESKTOP-reservation .footnote {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 349px;
+  background-color: #ffeaf0;
+}
+
+.DESKTOP-reservation .clock-icon-trendy {
+  position: absolute;
+  top: 245px;
+  left: 1038px;
+  width: 15px;
+  height: 15px;
+  aspect-ratio: 1;
+}
+
+.DESKTOP-reservation .kawa-logo-2 {
+  top: -13px;
+  width: 362px;
+  height: 362px;
+  position: absolute;
+  left: calc(50.00% - 657px);
+  aspect-ratio: 1;
+}
+
+.DESKTOP-reservation .text-wrapper-7 {
+  position: absolute;
+  top: 97px;
+  left: 425px;
+  width: 263px;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa6e95;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-8 {
+  position: absolute;
+  top: 97px;
+  left: 832px;
+  width: 101px;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa6e95;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-9 {
+  position: absolute;
+  top: 97px;
+  left: 1035px;
+  width: 139px;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa6e95;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-10 {
+  position: absolute;
+  top: 168px;
+  left: 425px;
+  width: 263px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .auto-flex {
+  position: absolute;
+  height: 29px;
+  top: 237px;
+  left: 425px;
+  display: flex;
+  align-items: flex-start;
+  min-width: 65px;
+  gap: 7px;
+}
+
+.DESKTOP-reservation .group-7 {
+  width: 29px;
+  height: 29px;
+}
+
+.DESKTOP-reservation .text-wrapper-11 {
+  position: absolute;
+  top: 139px;
+  left: 832px;
+  color: #000000;
+  line-height: normal;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-12 {
+  position: absolute;
+  top: 139px;
+  left: 1072px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-13 {
+  position: absolute;
+  top: 168px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-14 {
+  position: absolute;
+  top: 168px;
+  left: 1072px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-15 {
+  position: absolute;
+  top: 197px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-16 {
+  position: absolute;
+  top: 197px;
+  left: 1072px;
+  width: 248px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .monday-to-sunday {
+  position: absolute;
+  top: 245px;
+  left: 1072px;
+  width: 248px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-17 {
+  position: absolute;
+  top: 226px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-18 {
+  position: absolute;
+  top: 255px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .group-8 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 139px;
+  left: 1038px;
+}
+
+.DESKTOP-reservation .group-9 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 197px;
+  left: 1038px;
+}
+
+.DESKTOP-reservation .element-2 {
+  position: absolute;
+  top: 168px;
+  left: 1038px;
+  width: 15px;
+  height: 15px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.DESKTOP-reservation .element-eb-df-cf {
+  position: absolute;
+  top: 494px;
+  left: -765px;
+  width: 1372px;
+  height: 385px;
+  aspect-ratio: 3.56;
+}
+
+.DESKTOP-reservation .cherry-blossom {
+  position: absolute;
+  top: 520px;
+  left: 967px;
+  width: 591px;
+  height: 591px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* Inject original CSS code here */
+
+.DESKTOP-reservation .select-field,
+.DESKTOP-reservation .date-field,
+.DESKTOP-reservation .time-field,
+.DESKTOP-reservation .textarea-field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  border: none;
+  background: transparent;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  padding: 0 18%;
+}
+
+.DESKTOP-reservation .select-field:focus,
+.DESKTOP-reservation .date-field:focus,
+.DESKTOP-reservation .time-field:focus,
+.DESKTOP-reservation .textarea-field:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.DESKTOP-reservation .textarea-field {
+  resize: none;
+  padding: 22px 18%;
+  opacity: 0;
+}
+
+.DESKTOP-reservation .group label,
+.DESKTOP-reservation .group-2 label,
+.DESKTOP-reservation .group-3 label,
+.DESKTOP-reservation .group-4 label {
+  pointer-events: none;
+}
+
+.DESKTOP-reservation .numbers,
+.DESKTOP-reservation .element-wrapper {
+  cursor: pointer;
+  border: none;
+}
+
+.DESKTOP-reservation .numbers:hover,
+.DESKTOP-reservation .element-wrapper:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.DESKTOP-reservation .numbers:active,
+.DESKTOP-reservation .element-wrapper:active {
+  transform: translateY(0);
+}
+
+.DESKTOP-reservation .button:hover {
+  opacity: 0.9;
+}
+
+.DESKTOP-reservation .navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .navbar a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .navbar a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .footnote a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .footnote a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote address {
+  font-style: normal;
+}
+
+/* ===========================
+   Overrides & Fixes (stack fields,
+   visible inputs, remove tiny rotations,
+   responsive)
+   =========================== */
+
+/* Remove tiny design-tool rotations for cleaner layout */
+.DESKTOP-reservation .group,
+.DESKTOP-reservation .group-2,
+.DESKTOP-reservation .group-3,
+.DESKTOP-reservation .group-4,
+.DESKTOP-reservation .div,
+.DESKTOP-reservation .rectangle-2,
+.DESKTOP-reservation .rectangle-3,
+.DESKTOP-reservation .line,
+.DESKTOP-reservation .line-2,
+.DESKTOP-reservation .users,
+.DESKTOP-reservation .calendar,
+.DESKTOP-reservation .clock,
+.DESKTOP-reservation .clipboard {
+  transform: none !important;
+}
+
+/* Make the card comfortable to read:
+   keep absolute placement on large screens,
+   but give padding and auto height so fields can stack */
+.DESKTOP-reservation .card {
+  position: absolute;
+  /* keep approximate left/top but use fixed pixel width for predictability */
+  width: 420px;
+  top: 338px;
+  left: 34.86%;
+  height: auto;
+  padding: 28px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 28px;
+  box-shadow: 3px 6px 4px #00000040;
+  display: block;
+}
+
+/* Stack each field with consistent spacing */
+.DESKTOP-reservation .group,
+.DESKTOP-reservation .group-2,
+.DESKTOP-reservation .group-3 {
+  position: relative;
+  height: 56px;     /* uniform row height */
+  margin: 12px 0;   /* space between rows */
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+/* Textarea group taller */
+.DESKTOP-reservation .group-4 {
+  position: relative;
+  height: 120px;
+  margin: 12px 0;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+/* Background shapes fill the group's area */
+.DESKTOP-reservation .div,
+.DESKTOP-reservation .rectangle-2,
+.DESKTOP-reservation .rectangle-3 {
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  background-color: #fffafa;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+/* Normalized icons: left-aligned and vertically centered */
+.DESKTOP-reservation .users,
+.DESKTOP-reservation .calendar,
+.DESKTOP-reservation .clock,
+.DESKTOP-reservation .clipboard,
+.DESKTOP-reservation .line,
+.DESKTOP-reservation .line-2 {
+  position: absolute;
+  left: 12px;               /* icon padding */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Labels sit to the right of the icons and are vertically centered */
+.DESKTOP-reservation .text-wrapper,
+.DESKTOP-reservation .text-wrapper-2,
+.DESKTOP-reservation .text-wrapper-3,
+.DESKTOP-reservation .p {
+  position: absolute;
+  left: 44px;               /* icon 24px + gap 8-12px */
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  display: block;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #000;
+  pointer-events: none;     /* label non-interactive - inputs overlay them */
+  margin: 0;
+  padding: 0;
+}
+
+/* Native form controls: full-size, visible, and padded so they don't overlap icons */
+.DESKTOP-reservation .select-field,
+.DESKTOP-reservation .date-field,
+.DESKTOP-reservation .time-field {
+  position: absolute;
+  inset: 0;                 /* fill the row */
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  z-index: 2;
+  opacity: 1;               /* visible by default */
+  padding-left: 44px;       /* leave space for icons/labels */
+  box-sizing: border-box;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.DESKTOP-reservation .textarea-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  z-index: 2;
+  opacity: 1;
+  padding: 14px 16px 14px 44px; 
+  box-sizing: border-box;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.DESKTOP-reservation .select-field:focus,
+.DESKTOP-reservation .date-field:focus,
+.DESKTOP-reservation .time-field:focus,
+.DESKTOP-reservation .textarea-field:focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .numbers,
+.DESKTOP-reservation .element-wrapper {
+  cursor: pointer;
+  border: none;
+  transition: transform 0.08s ease, opacity 0.08s ease;
+}
+
+.DESKTOP-reservation .numbers:hover,
+.DESKTOP-reservation .element-wrapper:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.DESKTOP-reservation .numbers:active,
+.DESKTOP-reservation .element-wrapper:active {
+  transform: translateY(0);
+}
+
+.DESKTOP-reservation .button:hover {
+  opacity: 0.9;
+}
+
+.DESKTOP-reservation .navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .navbar a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .navbar a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .footnote a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .footnote a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote address {
+  font-style: normal;
+}
+
+
+  .DESKTOP-reservation {
+    min-width: 0;        
+    padding: 24px;
+  }
+
+  .DESKTOP-reservation .card {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 640px;
+    margin-top: 40px;
+    padding: 24px;
+  }
+
+  .DESKTOP-reservation .petals-right,
+  .DESKTOP-reservation .bundok,
+  .DESKTOP-reservation .cherry-blossom {
+    display: none;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .DESKTOP-reservation .card {
+    width: calc(100% - 32px);
+    padding: 18px;
+  }
+
+  .DESKTOP-reservation .group,
+  .DESKTOP-reservation .group-2,
+  .DESKTOP-reservation .group-3 {
+    height: 52px;
+    margin: 10px 0;
+  }
+
+  .DESKTOP-reservation .group-4 {
+    height: 140px;
+  }
+
+  .DESKTOP-reservation .frame {
+    left: 16px;
+    width: calc(100% - 32px);
+    gap: 20px;
+  }
+
+  .DESKTOP-reservation .kawa-logo,
+  .DESKTOP-reservation .kawa-logo-2 {
+    left: 16px;
+  }
+}
+
+
