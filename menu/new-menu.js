@@ -31,6 +31,21 @@ new Swiper('.cards-menu-wrapper', {
 
 });
 
+const menuSwiper = new Swiper('.main-menu-carousel', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 45,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
 document.getElementById(".main-order-btn").addEventListener("click", function() {
     document.getElementById(".menu-order-btn").scrollIntoView({
         behavior: "smooth",
