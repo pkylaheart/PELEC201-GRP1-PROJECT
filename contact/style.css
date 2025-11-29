@@ -131,12 +131,19 @@ h2 {
     align-items: center;
     border-radius: 10px;
     border: 3px solid #C70742;
-    background: #C70742;
+    background-color: #C70742; /* default color */
     font-family: "Lilita One", sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+
+.button-row:hover {
+    background-color: #F06285;
+    border-color: #F06285;
+}
+
 
 /* Styling the image */
 .desc-image {
