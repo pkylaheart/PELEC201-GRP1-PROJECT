@@ -1,0 +1,342 @@
+/* main*/
+
+body {
+  background-color: #f9e7e7;
+  font-family: Inter, sans-serif;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 120px;
+  margin: 40px 0 20em 0;
+}
+
+.content-left {
+  max-width: 550px;
+  padding-top: 40px;
+}
+
+.home-text {
+  align-self: stretch;
+  color: #f894b0;
+  font-family: "Lilita One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.sub-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.about_us-button,
+.view_menu-button {
+  position: relative;
+  width: 183px;
+  height: 55px;
+  border-radius: 70px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 20px;
+  z-index: 3;
+}
+
+.about_us-button {
+  border: 3px solid #ff9e9e;
+  background: transparent;
+  color: #ff9e9e;
+}
+
+.about_us-button:hover {
+  color: #fff;
+  background-color: #eb7878;
+  transform: 2s;
+}
+
+.view_menu-button {
+  background: #f1b4c6;
+  border: none;
+  color: white;
+}
+
+.view_menu-button:hover {
+  color: #fff;
+  background-color: #eb7878;
+  transform: 2s;
+}
+
+.content-right {
+  position: absolute;
+  right: 25%;
+  width: 750px;
+  height: 750px;
+  justify-content: end;
+  align-items: end;
+}
+
+.frame39 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50px;
+  flex-shrink: 0;
+  z-index: 1;
+  left: 320px;
+  top: 50px;
+}
+
+.unknown-text {
+  position: absolute;
+  right: 14px;
+  top: 63%;
+  transform: translateY(-50%);
+  font-family: "Ninja Kage Demo";
+  font-size: 150px;
+  color: #753b41;
+  text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+  letter-spacing: 30px;
+  line-height: 1.1;
+  z-index: 2;
+}
+
+/* food section*/
+.foodsection {
+  margin: 40px 0 10em 0;
+}
+body {
+  background-color: #f9e7e7;
+  font-family: Inter, sans-serif;
+}
+
+h1 {
+  color: #f894b0;
+  font-family: "Lilita One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.foodtxt {
+  color: #333;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 31px;
+}
+
+.pics {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+}
+
+.food-card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.food-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.food-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.4;
+  filter: brightness(0.7);
+}
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.food-card:hover .card-text {
+  opacity: 1;
+}
+
+.card-text h2 {
+  color: #ffd1dc;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.underline {
+  width: 150px;
+  height: 1px;
+  background: #000;
+  margin: 10px auto 0;
+}
+
+.underline-small {
+  width: 100px;
+  height: 1px;
+  background: #000;
+  margin: 5px auto 0;
+}
+
+.button {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 184px;
+
+  border-radius: 70px;
+
+  color: #fff;
+  background-color: #f1b4c6;
+  border: 4px solid #f1b4c6;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #ff92b3;
+  transform: 2s;
+}
+
+/* my code*/
+body {
+  background-color: #fbf5f6;
+  font-family: Inter, sans-serif;
+  max-width: 1400;
+}
+.carousel {
+  margin: auto;
+  height: 20em;
+  width: 85%;
+  border: 25px solid #ffdee9;
+  border-radius: 2%;
+  display: flex;
+  overflow-x: auto;
+  background: #ffdee9;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 10s linear infinite;
+  padding-right: 1em;
+}
+.card {
+  flex: 0 0 5em;
+  height: 7em;
+  background: #ffdee9;
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+/* review card modif */
+.reviewcontainer {
+  width: 80%;
+  margin: auto;
+  padding: 2em 0 0 0;
+  text-align: center;
+
+  position: relative;
+}
+.reviewcard {
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  align-content: center;
+  border: 2px solid #ffdee9;
+  border-radius: 10px;
+  margin: 1em 4em 3em 4em;
+  padding: 1em 3em 0 3em;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #ffdee9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+
+  gap: 20px;
+}
+
+.reviewtext {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 80px;
+  margin-top: -5%;
+}
+.quotainer {
+  display: inline-block;
+}
+.quoteimg {
+  background: white;
+  border-radius: 100%;
+  padding: 0.5em;
+  width: 4em;
+  height: 4em;
+  margin: -10%;
+  position: relative;
+  bottom: 3em;
+  left: 50%;
+}
+/* image modif */
+#pngkawa {
+  width: 100%;
+  height: 100%;
+}
+#doublepng {
+  width: 100%;
+  height: 50%;
+}
+.starpng {
+  width: 40%;
+  height: 10%;
+}
+
+.canijustcentereverythinginadivahh {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
