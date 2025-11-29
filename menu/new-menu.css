@@ -247,7 +247,6 @@
 .cards-section {
     width: 100%;
     max-width: 1400px;
-    height: 7000px;
     padding: 20px 0;
     margin: 0 auto;
     margin-top: 130px;
@@ -347,6 +346,24 @@
     margin-top: 44px;
 }
 
+
+/* MENU LIST SECTION */
+
+.main-menu-section {
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.all-menu {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .main-menu-list {
     margin-top: 130px;
     max-width: 1400px;
@@ -368,6 +385,7 @@
 }
 
 .main-menu-container {
+    margin-top: 30px;
     display: flex;
     width: 100%;
     padding: 100px 54px;
@@ -380,7 +398,7 @@
     background: #F894B0;
 }
 
-.main-menu-wrapper {
+.main-menu-box {
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -471,7 +489,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0 0 50px 0;
+    margin: 0 0 60px 0;
 }
 
 .main-menu-note {
@@ -490,6 +508,18 @@
     gap: 20px;
 }
 
+.trays-item {
+    display: flex;
+    gap: 17px;
+}
+
+.trays-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+}
+
 .menu-size {
     color: #000;
     font-family: Roboto;
@@ -502,6 +532,7 @@
 
 .second-row {
     margin-top: 60px;
+    margin-bottom: 60px;
     background-color: #FFCDCD;
     padding: 100px 54px;
     width: 100%;
