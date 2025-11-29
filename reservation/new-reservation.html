@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="new-reservation.css" />
   </head>
+  
   <body>
     <main class="DESKTOP-reservation">
       <img class="bundok" src="/_ASSETS/reservation-assets/bundok.png" alt="Mountain landscape background" />
@@ -16,13 +17,11 @@
       <img class="cherry-blossom-top" src="/_ASSETS/reservation-assets/cherry-blossom-top.png" alt="Cherry blossom branch decoration" />
       <div class="rectangle" aria-hidden="true"></div>
       <img class="img" src="/_ASSETS/reservation-assets/Rectangle-132.png" alt="Decorative background shape" />
-      <section class="card" aria-label="Reseroppppppppp[-vation form">
+      <section class="card" aria-label="Reservation form">
         <form>
-          <div class="group">
-            <div class="div"></div>
-            <img class="line" src="/_ASSETS/reservation-assets/line1.png" alt="" aria-hidden="true" />
-            <img class="users" src="/_ASSETS/reservation-assets/customer.png" alt="" aria-hidden="true" />
-            <label for="customers" class="text-wrapper">No. of Customers</label>
+          <div class="customers">
+            <div class="customer-box"></div>
+            <img class="user-icon" src="/_ASSETS/reservation-assets/customer.png" alt="" aria-hidden="true" />
             <select id="customers" name="customers" class="select-field" aria-label="Number of customers">
               <option value="">Select number of customers</option>
               <option value="1">1 person</option>
@@ -34,38 +33,29 @@
               <option value="7">7 people</option>
               <option value="8">8 people</option>
             </select>
-            <img class="chevron-down" src="/_ASSETS/reservation-assets/chevron1.png" alt="" aria-hidden="true" />
           </div>
-          <div class="group-2">
-            <div class="rectangle-2"></div>
-            <img class="line" src="/_ASSETS/reservation-assets/line2.png" alt="" aria-hidden="true" />
+          <div class="date">
+            <div class="date-box"></div>
             <img class="calendar" src="/_ASSETS/reservation-assets/date.png" alt="" aria-hidden="true" />
-            <label for="date" class="text-wrapper-2">Date</label>
-            <input type="date" id="date" name="date" class="date-field" aria-label="Reservation date" />
-            <img class="chevron-down-2" src="/_ASSETS/reservation-assets/chevron2.png" alt="" aria-hidden="true" />
+            <input type="date" name="date" class="date-field" aria-label="Reservation date" />
           </div>
-          <div class="group-3">
-            <div class="rectangle-2"></div>
-            <img class="line" src="/_ASSETS/reservation-assets/line3.png" alt="" aria-hidden="true" />
+          <div class="time">
+            <div class="time-box"></div>
             <img class="clock" src="/_ASSETS/reservation-assets/time.png" alt="" aria-hidden="true" />
-            <label for="time" class="text-wrapper-3">Time</label>
             <input type="time" id="time" name="time" class="time-field" aria-label="Reservation time" />
-            <img class="chevron-down-3" src="/_ASSETS/reservation-assets/chevron3.png" alt="" aria-hidden="true" />
           </div>
-          <div class="group-4">
+          <div class="special-req">
             <div class="group-5">
-              <div class="rectangle-3"></div>
-              <img class="line-2" src="/_ASSETS/reservation-assets/line3.png" alt="" aria-hidden="true" />
+              <div class="special-req-box"></div>
             </div>
             <label for="special-requests" class="p"
-              >Write your special requests here (e.g., table by the window, birthday setup, etc.)</label
-            >
+              >Write your special requests here (e.g., table by the window, birthday setup, etc.)</label>
             <textarea
               id="special-requests"
               name="special-requests"
               class="textarea-field"
-              aria-label="Special requests"
-            ></textarea>
+              aria-label="Special requests">
+            </textarea>
             <img class="clipboard" src="/_ASSETS/reservation-assets/personal-req.png" alt="" aria-hidden="true" />
           </div>
         </form>
@@ -75,19 +65,8 @@
       <p class="table-is-kept-for">
         Table is kept for 30 minutes after reservation time.<br />We appreciate you being on time.
       </p>
-      <header class="navbar">
-        <img class="kawa-logo" src="/_ASSETS/nav-bar-assets/kawa_logo-nav.png" alt="Kawa Restaurant Logo" />
-        <nav class="frame" aria-label="Main navigation">
-          <a href="#home" class="text-wrapper-4">Home</a>
-          <a href="#menu" class="text-wrapper-4">Menu</a>
-          <a href="#about" class="text-wrapper-4">About</a>
-          <div class="group-6">
-            <a href="index.html" class="text-wrapper-5" aria-current="page">Reservation</a>
-            <img class="line-3" src="img/line-1.svg" alt="" aria-hidden="true" />
-          </div>
-        </nav>
-        <button class="button" type="button"><span class="text-wrapper-6">Contact</span></button>
-      </header>
+
+      <!--start ng footer dito mau-->
       <footer class="footnote">
         <img
           class="clock-icon-trendy"
