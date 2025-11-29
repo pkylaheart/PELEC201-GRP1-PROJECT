@@ -1,6 +1,8 @@
 new Swiper('.cards-menu-wrapper', {
   // Optional parameters
   loop: true,
+  allowTouchMove: false,
+  speed: 600,
   spaceBetween: 45,
 
   // Pagination
@@ -14,6 +16,12 @@ new Swiper('.cards-menu-wrapper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  // Active card
+  on: {
+    slideChange: function () {
+    },
   },
 
   // Responsive breakpoints
@@ -34,7 +42,11 @@ new Swiper('.cards-menu-wrapper', {
 const menuSwiper = new Swiper('.main-menu-carousel', {
     slidesPerView: 1,
     loop: true,
-    spaceBetween: 45,
+    autoHeight: true,
+    speed: 600,
+    allowTouchMove: false,
+    observer: true,
+    observeParents: true,
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -45,6 +57,9 @@ const menuSwiper = new Swiper('.main-menu-carousel', {
         clickable: true,
     },
 });
+
+cardsSwiper.controller.control = menuSwiper;
+menuSwiper.controller.control = cardsSwiper;
 
 document.getElementById(".main-order-btn").addEventListener("click", function() {
     document.getElementById(".menu-order-btn").scrollIntoView({
