@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hover Dropdown Menu</title>
+    
+<script src="https://cdn.tailwindcss.com"></script>
+    
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-pink': '#ffe8e8', 
+                        'accent-pink': '#ff7f7f', 
+                        'dark-text': '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .dropdown-menu {
+            opacity: 0;
+            max-height: 0;
+            transition: opacity 300ms ease-out, max-height 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            pointer-events: none;
+            overflow: hidden; 
+        }
+
+        .menu-item:hover .dropdown-menu {
+            opacity: 1;
+            max-height: calc(100vh - 4rem); 
+            pointer-events: auto;
+        }
+        
+        .full-width-header {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+        }
+
+        .full-screen-dropdown {
+            position: fixed;
+            top: 4rem; 
+            left: 0;
+            width: 100vw;
+            height: calc(100vh - 4rem);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-primary-pink font-sans text-dark-text min-h-screen">
+
+    
+<header class="bg-primary-pink border-b border-pink-100 full-width-header">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            
+            
+<div class="flex items-center space-x-2">
+                
+<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent-pink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 11V6M12 11l-3 3M12 11l3 3"/></svg>
+            </div>
+
+            
+<div class="flex space-x-8 text-sm font-medium h-full">
+                
+<a href="#" class="flex items-center px-2 border-b-2 border-accent-pink text-accent-pink transition duration-150">Home</a>
+                
+                
+<div class="menu-item relative group flex items-center px-2 h-full">
+                    
+<a href="#" class="flex items-center border-b-2 border-transparent hover:border-accent-pink transition duration-150 h-full">Menu</a>
+                    
+
+<div class="dropdown-menu full-screen-dropdown overflow-y-auto z-20">
+                        
+                        
+<div class="bg-primary-pink p-8 pt-10 shadow-xl border-t-4 border-accent-pink h-full flex flex-col items-center">
+                            
+                            
+<h2 class="text-3xl font-extrabold mb-10 text-center text-dark-text">Shop by Category</h2>
+                            
+                            
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl w-full mx-auto">
+                                
+                <!-- #no.1 card left side special dish -->                
+<div class="bg-white p-4 rounded-xl card-shadow flex items-center justify-between transition hover:ring-2 hover:ring-accent-pink cursor-pointer">
+                                    <div class="flex items-center space-x-4">
+                                        
+<img src="HoveringMenu\Special.png" class="rounded-lg object-cover w-60 h-14 clip-trapezoid" alt="Special Dish">
+                                        <div>
+                                            <p class="font-semibold text-dark-text">Special Dish</p>
+                                            <p class="text-xs text-gray-500">6 dishes</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                </div>
+
+                <!-- #no.2 card right side sushi -->
+<div class="bg-white p-4 rounded-xl card-shadow flex items-center justify-between transition hover:ring-2 hover:ring-accent-pink cursor-pointer">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="HoveringMenu\Sushi.png" class="rounded-lg object-cover w-60 h-14 clip-trapezoid" alt="Sushi and maki rolls">
+                                        <div>
+                                            <p class="font-semibold text-dark-text">Sushi and <br> maki rolls</p>
+                                            <p class="text-xs text-gray-500">6 dishes</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                </div>
+
+                <!-- #no.3 card left side bento -->                
+<div class="bg-white p-4 rounded-xl card-shadow flex items-center justify-between transition hover:ring-2 hover:ring-accent-pink cursor-pointer">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="HoveringMenu\Bento.png" class="rounded-lg object-cover w-60 h-14 clip-trapezoid" alt="Rice bowl and bento">
+                                        <div>
+                                            <p class="font-semibold text-dark-text">Rice bowl <br> and bento</p>
+                                            <p class="text-xs text-gray-500">6 dishes</p>
+                                            </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                </div>
+                                
+                <!-- #no.4 card right side snacks -->                
+<div class="bg-white p-4 rounded-xl card-shadow flex items-center justify-between transition hover:ring-2 hover:ring-accent-pink cursor-pointer">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="HoveringMenu\Snacks.png" class="rounded-lg object-cover w-60 h-14 clip-trapezoid" alt="Sides and Snacks">
+                                        <div>
+                                            <p class="font-semibold text-dark-text">Sides and <br> Snacks</p>
+                                            <p class="text-xs text-gray-500">6 dishes</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                </div>
+                                
+                <!-- #no.5 card left side noodles -->                
+<div class="bg-white p-4 rounded-xl card-shadow flex items-center justify-between transition hover:ring-2 hover:ring-accent-pink cursor-pointer">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="HoveringMenu\Noodles.png" class="rounded-lg object-cover w-60 h-14 clip-trapezoid" alt="Noodles and Grills">
+                                        <div>
+                                            <p class="font-semibold text-dark-text">Noodles <br> and Grills</p>
+                                            <p class="text-xs text-gray-500">6 dishes</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                </div>
+                                
+                <!-- #no.6 card right side drinks -->                
+<div class="bg-white p-4 rounded-xl card-shadow flex items-center justify-between transition hover:ring-2 hover:ring-accent-pink cursor-pointer">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="HoveringMenu\Drinks.png" class="rounded-lg object-cover w-60 h-14 clip-trapezoid" alt="Drinks">
+                                        <div>
+                                            <p class="font-semibold text-dark-text">Drinks</p>
+                                            <p class="text-xs text-gray-500">6 dishes</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                </div>
+                                
+
+<div class="lg:col-span-2 text-center pt-8 text-gray-500">
+                                    <p>______________________________________________________________________________________</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+<a href="#" class="flex items-center px-2 border-b-2 border-transparent hover:border-accent-pink transition duration-150">About</a>
+                <a href="#" class="flex items-center px-2 border-b-2 border-transparent hover:border-accent-pink transition duration-150">Reservation</a>
+            </div>
+
+            
+<a href="#" class="bg-dark-text text-white text-sm font-medium py-2 px-4 rounded-lg hover:bg-gray-700 transition duration-150 shadow-md">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    
+<main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12">
+        
+        
+<div class="p-8 bg-white rounded-xl shadow-lg relative overflow-hidden">
+            <h3 class="text-xl font-semibold mb-4 text-dark-text">Your taste buds are in for a treat!</h3>
+            <div class="flex items-center space-x-4">
+                
+<button class="px-6 py-2 border border-accent-pink text-accent-pink font-medium rounded-full transition hover:bg-accent-pink hover:text-white hover:shadow-md">About Us</button>
+                <button class="px-6 py-2 bg-accent-pink text-white font-medium rounded-full transition hover:bg-red-500 shadow-lg">View Menu</button>
+            </div>
+            
+            
+<div class="absolute right-0 bottom-0 opacity-40 translate-x-1/4 translate-y-1/4 pointer-events-none hidden lg:block">
+                <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="200" cy="200" r="190" fill="#FFC0CB" opacity="0.5"/>
+                    <path d="M200 10C200 10 250 100 350 100C350 200 200 250 200 390C200 390 150 250 50 200C50 100 200 10 200 10Z" fill="#FFAAAA" opacity="0.8"/>
+                    <text x="300" y="380" font-family="serif" font-size="250" fill="#FFC0CB" opacity="0.6">ヒ</text>
+                </svg>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>
