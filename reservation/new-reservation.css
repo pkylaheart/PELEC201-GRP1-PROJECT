@@ -1,0 +1,693 @@
+.DESKTOP-reservation {
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 246, 246, 1) 0%,
+    rgba(255, 208, 208, 1) 100%
+  );
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1463px;
+  position: relative;
+}
+
+
+.DESKTOP-reservation .bundok {
+  position: absolute;
+  top: 667px;
+  left: 0;
+  width: 1445px;
+  height: 462px;
+  aspect-ratio: 3.13;
+}
+.DESKTOP-reservation .petals-right {
+  position: absolute;
+  top: 107px;
+  left: 948px;
+  width: 670px;
+  height: 444px;
+  aspect-ratio: 1.51;
+}
+.DESKTOP-reservation .petals-left {
+  position: absolute;
+  top: 507px;
+  left: 0;
+  width: 304px;
+  height: 319px;
+  aspect-ratio: 0.95;
+}
+.DESKTOP-reservation .cherry-blossom-top {
+  position: absolute;
+  top: 141px;
+  left: -4px;
+  width: 523px;
+  height: 338px;
+  aspect-ratio: 1.55;
+}
+
+
+.DESKTOP-reservation .cherry-blossom {
+  position: absolute;
+  top: 520px;
+  left: 967px;
+  width: 591px;
+  height: 591px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/*pop-up box*/
+.DESKTOP-reservation .rectangle {
+  position: absolute;
+  top: 910px;
+  left: 258px;
+  width: 888px;
+  height: 130px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 8px 7px 4px #00000040;
+  opacity: 0.3;
+}
+.DESKTOP-reservation .img {
+  position: absolute;
+  top: 215px;
+  left: 404px;
+  width: 593px;
+  height: 627px;
+  aspect-ratio: 0.95;
+}
+/*special req option*/
+.DESKTOP-reservation .p {
+  position: absolute;
+  width: 69.77%;
+  top: 22px;
+  left: 18.66%;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-0.10deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/*confirm button*/
+.DESKTOP-reservation .numbers {
+  position: absolute;
+  top: 734px;
+  left: 615px;
+  width: 176px;
+  height: 43px;
+  background-color: #f8a0b8;
+  border-radius: 52px;
+  box-shadow: 0px 4px 5px #00000040;
+}
+
+.DESKTOP-reservation .element {
+  position: absolute;
+  width: 65.79%;
+  height: 65.79%;
+  top: 18.42%;
+  left: 15.79%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/*OK button*/
+
+.DESKTOP-reservation .element-wrapper {
+  position: absolute;
+  top: 956px;
+  left: 921px;
+  width: 176px;
+  height: 43px;
+  background-color: #f79fb8;
+  border-radius: 52px;
+  box-shadow: 0px 4px 5px #00000040;
+}
+
+/*button borders*/
+.DESKTOP-reservation .numbers,
+.DESKTOP-reservation .element-wrapper {
+  cursor: pointer;
+  border: none;
+}
+
+/*table is kept for 30 minutes*/
+.DESKTOP-reservation .table-is-kept-for {
+  position: absolute;
+  width: 26.53%;
+  top: 956px;
+  left: 22.92%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/*START NG FOOTNOTE*/
+
+.DESKTOP-reservation .footnote {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 349px;
+  background-color: #ffeaf0;
+}
+
+.DESKTOP-reservation .clock-icon-trendy {
+  position: absolute;
+  top: 245px;
+  left: 1038px;
+  width: 15px;
+  height: 15px;
+  aspect-ratio: 1;
+}
+
+.DESKTOP-reservation .kawa-logo-2 {
+  top: -13px;
+  width: 362px;
+  height: 362px;
+  position: absolute;
+  left: calc(50.00% - 657px);
+  aspect-ratio: 1;
+}
+
+.DESKTOP-reservation .text-wrapper-7 {
+  position: absolute;
+  top: 97px;
+  left: 425px;
+  width: 263px;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa6e95;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-8 {
+  position: absolute;
+  top: 97px;
+  left: 832px;
+  width: 101px;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa6e95;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-9 {
+  position: absolute;
+  top: 97px;
+  left: 1035px;
+  width: 139px;
+  font-family: "Lilita One-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa6e95;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-10 {
+  position: absolute;
+  top: 168px;
+  left: 425px;
+  width: 263px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .auto-flex {
+  position: absolute;
+  height: 29px;
+  top: 237px;
+  left: 425px;
+  display: flex;
+  align-items: flex-start;
+  min-width: 65px;
+  gap: 7px;
+}
+
+.DESKTOP-reservation .group-7 {
+  width: 29px;
+  height: 29px;
+}
+
+.DESKTOP-reservation .text-wrapper-11 {
+  position: absolute;
+  top: 139px;
+  left: 832px;
+  color: #000000;
+  line-height: normal;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-12 {
+  position: absolute;
+  top: 139px;
+  left: 1072px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-13 {
+  position: absolute;
+  top: 168px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-14 {
+  position: absolute;
+  top: 168px;
+  left: 1072px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-15 {
+  position: absolute;
+  top: 197px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-16 {
+  position: absolute;
+  top: 197px;
+  left: 1072px;
+  width: 248px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .monday-to-sunday {
+  position: absolute;
+  top: 245px;
+  left: 1072px;
+  width: 248px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.DESKTOP-reservation .text-wrapper-17 {
+  position: absolute;
+  top: 226px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .text-wrapper-18 {
+  position: absolute;
+  top: 255px;
+  left: 832px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.DESKTOP-reservation .group-8 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 139px;
+  left: 1038px;
+}
+
+.DESKTOP-reservation .group-9 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 197px;
+  left: 1038px;
+}
+
+.DESKTOP-reservation .element-2 {
+  position: absolute;
+  top: 168px;
+  left: 1038px;
+  width: 15px;
+  height: 15px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.DESKTOP-reservation .element-eb-df-cf {
+  position: absolute;
+  top: 494px;
+  left: -765px;
+  width: 1372px;
+  height: 385px;
+  aspect-ratio: 3.56;
+}
+
+
+.DESKTOP-reservation .footnote a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .footnote a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .footnote a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote address {
+  font-style: normal;
+}
+
+.DESKTOP-reservation .footnote a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DESKTOP-reservation .footnote a:hover {
+  opacity: 0.7;
+}
+
+.DESKTOP-reservation .footnote a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .footnote address {
+  font-style: normal;
+}
+
+/*============== FOOTNOTE END =================*/
+
+/* -------------------------------------------------------------
+   BASE FORM FIELD OVERLAY (select, date, time, textarea)
+------------------------------------------------------------- */
+
+
+.DESKTOP-reservation .select-field,
+.DESKTOP-reservation .date-field,
+.DESKTOP-reservation .time-field,
+.DESKTOP-reservation .textarea-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  padding: 0 18%;
+}
+
+/* Textarea-specific adjustments */
+.DESKTOP-reservation .textarea-field {
+  resize: none;
+  padding: 22px 18%;
+}
+
+/* Inputs become visible when editing */
+.DESKTOP-reservation .select-field:focus,
+.DESKTOP-reservation .date-field:focus,
+.DESKTOP-reservation .time-field:focus,
+.DESKTOP-reservation .textarea-field:focus {
+  opacity: 1;
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+
+/* -------------------------------------------------------------
+   BUTTON INTERACTIONS
+------------------------------------------------------------- */
+.DESKTOP-reservation .numbers:hover,
+.DESKTOP-reservation .element-wrapper:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.DESKTOP-reservation .numbers:active,
+.DESKTOP-reservation .element-wrapper:active {
+  transform: translateY(0);
+}
+
+
+/* -------------------------------------------------------------
+RESERVATION CARD
+
+------------------------------------------------------------- */
+.DESKTOP-reservation .customers,
+.DESKTOP-reservation .date,
+.DESKTOP-reservation .time,
+.DESKTOP-reservation .special-req,
+.DESKTOP-reservation .div,
+.DESKTOP-reservation .date-box,
+.DESKTOP-reservation .time-box,
+.DESKTOP-reservation .user-icon,
+.DESKTOP-reservation .calendar,
+.DESKTOP-reservation .clock,
+.DESKTOP-reservation .clipboard {
+  transform: none !important;
+}
+
+/* Icons Alignment */
+.DESKTOP-reservation .user-icon,
+.DESKTOP-reservation .calendar,
+.DESKTOP-reservation .clock,
+.DESKTOP-reservation .clipboard{
+  position: absolute;
+  left: 12px;               /* icon padding */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.DESKTOP-reservation .card {
+  position: absolute;
+  /* keep approximate left/top but use fixed pixel width for predictability */
+  width: 420px;
+  top: 338px;
+  left: 34.86%;
+  height: auto;
+  padding: 28px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 28px;
+  box-shadow: 3px 6px 4px #00000040;
+  display: block;
+}
+
+
+/* box alignment */
+.DESKTOP-reservation .customers,
+.DESKTOP-reservation .date,
+.DESKTOP-reservation .time {
+  position: relative;
+  height: 56px;     /* uniform row height */
+  margin: 12px 0;   /* space between rows */
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+
+/*added borders to the card*/
+.DESKTOP-reservation .customer-box,
+.DESKTOP-reservation .date-box,
+.DESKTOP-reservation .time-box,
+.DESKTOP-reservation .special-req-box {
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  background-color: #fffafa;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.DESKTOP-reservation .special-req {
+  position: relative;
+  height: 120px;
+  margin: 12px 0;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+
+
+.DESKTOP-reservation .text-wrapper,
+.DESKTOP-reservation .text-wrapper-2,
+.DESKTOP-reservation .text-wrapper-3,
+.DESKTOP-reservation .p {
+  position: absolute;
+  left: 44px;               /* icon 24px + gap 8-12px */
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  display: block;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #000;
+  pointer-events: none;     /* label non-interactive - inputs overlay them */
+  margin: 0;
+  padding: 0;
+}
+
+/* option-labels */
+.DESKTOP-reservation .select-field,
+.DESKTOP-reservation .date-field,
+.DESKTOP-reservation .time-field {
+  position: absolute;
+  inset: 0;                 /* fill the row */
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  z-index: 2;
+  opacity: 1;               /* visible by default */
+  padding-left: 44px;       /* leave space for icons/labels */
+  box-sizing: border-box;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.DESKTOP-reservation .textarea-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  z-index: 2;
+  opacity: 1;
+  padding: 14px 16px 14px 44px; 
+  box-sizing: border-box;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  resize: vertical;
+}
+
+
+
+.DESKTOP-reservation .select-field:focus,
+.DESKTOP-reservation .date-field:focus,
+.DESKTOP-reservation .time-field:focus,
+.DESKTOP-reservation .textarea-field:focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.DESKTOP-reservation .numbers,
+.DESKTOP-reservation .element-wrapper {
+  cursor: pointer;
+  border: none;
+  transition: transform 0.08s ease, opacity 0.08s ease;
+}
+
+.DESKTOP-reservation .numbers:hover,
+.DESKTOP-reservation .element-wrapper:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.DESKTOP-reservation .numbers:active,
+.DESKTOP-reservation .element-wrapper:active {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
