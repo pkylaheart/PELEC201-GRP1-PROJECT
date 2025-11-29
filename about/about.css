@@ -1,22 +1,136 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f8dfe6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.image-container {
+/* NAVIGATION BAR */
+.menu-header {
     width: 100%;
-    height: 846px;
+    display: flex;
+    height: 100px;
+    box-shadow: 0 5px 10.9px rgba(0, 0, 0, 0.41);
+    justify-content: center;
+    background-color: #FEE8E8;
+    z-index: 1000;
+    position: relative;
+}
+
+.menu-navigation-bar {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
     align-items: center;
+    gap: 284px;
+    margin: 0 40px;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.middle-bar-links {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-btn {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact-btn {
+    width: 125px;
+    height: 51px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #2C2C2C;
+    background: #2C2C2C;
+    color: #F5F5F5;
+    font-size: 20px;
+}
+
+/* TOP IMAGE */
+.image-container {
+    display: flex;
+    justify-content: center;
 }
 
 .main-img {
-    max-width: 1440px;
+    width: 100%;
+    height: 852px;
+    max-width: 1400px;
 }
 
-    
+/* ABOUT SECTION LAYERING */
+.about-contentLEFT {
+    position: relative;      
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* Pink Blob */
+.pinkblob-vt {
+    width: auto;
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Kawa Logo overlay */
+.kawaLogo-img {
+    position: absolute;
+    height: 580px;
+    width: auto;
+    top: 150px;
+    left: 240px; 
+    z-index: 10;
+}
+
+.about-contentRIGHT {
+    max-width: 1400px;
+    position: relative;
+    width: 100%;
+}
+
+.about-title {
+    color: #C70742;
+    font-size: 50px;
+    font-weight: 57px;
+    font-family: 'Lilita One';
+    position: absolute;
+    top: -900px;
+    left: 1000px;
+    z-index: 15;
+}
+
+.about-text {
+    font-size: 20px;
+    font-weight: 20px;
+    font-family: 'Inter';
+    position: absolute;
+    line-height: 1.3;
+    top: -800px;
+    left: 1000px;
+    z-index: 15;
+
+}
+
+.about-text1 {
+    font-size: 20px;
+    font-weight: 20px;
+    font-family: 'Inter';
+    position: absolute;
+    line-height: 1.3;
+    top: -550px;
+    left: 1000px;
+    z-index: 15;
+}
