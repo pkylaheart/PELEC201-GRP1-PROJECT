@@ -14,7 +14,6 @@
   .popup-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,9 +35,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('https://i.imgur.com/7y8H8pP.png'); /* Your mountain image */
     background-size: cover;
     background-position: center;
+    box-shadow: 8px 7px 4px #00000040;
+    opacity:0.3;
+    
   }
 
   /* Text */
@@ -92,6 +93,8 @@
     popup.classList.add('hidden');
     localStorage.setItem('popupDismissed', 'true');
   });
+
+  
 </script>
 
 </body>
