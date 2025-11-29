@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(180deg, #FFF6F6 0%, #e78c8c 90%);
+}
+
+.reservation-frame{
+    border: 2px solid rgb(252, 252, 252);
+}
+
+.reservation-button:link, .reservation-button:visited {
+    color: #FFF;
+    text-align: center;
+    font-family: "Lilita One";
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 43px;
+    background-color: #e49caf;
+    text-decoration: none;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    display: inline-block;
+}
+
+.reservation-button:hover {
+    background-color:rgb(245, 169, 169);
+}
+
+#cherry-blossom-top {
+    float: left;
+}
+
+#petals-left {
+    float: left;
+    margin: 5px;
+}
+
+#petals-right {
+    float: right;
+}
+
+#petals-bottom {
+    float: right;
+    margin: 5px;
+}
