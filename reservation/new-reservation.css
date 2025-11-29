@@ -11,6 +11,7 @@
   position: relative;
 }
 
+
 .DESKTOP-reservation .bundok {
   position: absolute;
   top: 667px;
@@ -43,6 +44,7 @@
   height: 338px;
   aspect-ratio: 1.55;
 }
+
 
 .DESKTOP-reservation .cherry-blossom {
   position: absolute;
@@ -452,6 +454,8 @@
 /* -------------------------------------------------------------
    BASE FORM FIELD OVERLAY (select, date, time, textarea)
 ------------------------------------------------------------- */
+
+
 .DESKTOP-reservation .select-field,
 .DESKTOP-reservation .date-field,
 .DESKTOP-reservation .time-field,
@@ -486,15 +490,6 @@
   outline-offset: 2px;
 }
 
-/* -------------------------------------------------------------
-   LABELS INSIDE GROUPS (non-clickable floating labels)
-------------------------------------------------------------- */
-.DESKTOP-reservation .group label,
-.DESKTOP-reservation .group-2 label,
-.DESKTOP-reservation .group-3 label,
-.DESKTOP-reservation .group-4 label {
-  pointer-events: none;
-}
 
 /* -------------------------------------------------------------
    BUTTON INTERACTIONS
@@ -512,27 +507,36 @@
 
 
 /* -------------------------------------------------------------
-   TRANSFORM RESET
-   Removes leftover transform rules from Figma export
+RESERVATION CARD
+
 ------------------------------------------------------------- */
-.DESKTOP-reservation .group,
-.DESKTOP-reservation .group-2,
-.DESKTOP-reservation .group-3,
-.DESKTOP-reservation .group-4,
+.DESKTOP-reservation .customers,
+.DESKTOP-reservation .date,
+.DESKTOP-reservation .time,
+.DESKTOP-reservation .special-req,
 .DESKTOP-reservation .div,
-.DESKTOP-reservation .rectangle-2,
-.DESKTOP-reservation .rectangle-3,
-.DESKTOP-reservation .line,
-.DESKTOP-reservation .line-2,
-.DESKTOP-reservation .users,
+.DESKTOP-reservation .date-box,
+.DESKTOP-reservation .time-box,
+.DESKTOP-reservation .user-icon,
 .DESKTOP-reservation .calendar,
 .DESKTOP-reservation .clock,
 .DESKTOP-reservation .clipboard {
   transform: none !important;
 }
 
-
-/* RESERVATION CARD*/
+/* Icons Alignment */
+.DESKTOP-reservation .user-icon,
+.DESKTOP-reservation .calendar,
+.DESKTOP-reservation .clock,
+.DESKTOP-reservation .clipboard{
+  position: absolute;
+  left: 12px;               /* icon padding */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
 
 .DESKTOP-reservation .card {
   position: absolute;
@@ -551,9 +555,9 @@
 
 
 /* box alignment */
-.DESKTOP-reservation .group,
-.DESKTOP-reservation .group-2,
-.DESKTOP-reservation .group-3 {
+.DESKTOP-reservation .customers,
+.DESKTOP-reservation .date,
+.DESKTOP-reservation .time {
   position: relative;
   height: 56px;     /* uniform row height */
   margin: 12px 0;   /* space between rows */
@@ -561,18 +565,12 @@
   box-sizing: border-box;
 }
 
-.DESKTOP-reservation .group-4 {
-  position: relative;
-  height: 120px;
-  margin: 12px 0;
-  padding-right: 8%;
-  box-sizing: border-box;
-}
 
 /*added borders to the card*/
-.DESKTOP-reservation .div,
-.DESKTOP-reservation .rectangle-2,
-.DESKTOP-reservation .rectangle-3 {
+.DESKTOP-reservation .customer-box,
+.DESKTOP-reservation .date-box,
+.DESKTOP-reservation .time-box,
+.DESKTOP-reservation .special-req-box {
   position: absolute;
   inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
   background-color: #fffafa;
@@ -581,21 +579,15 @@
   box-sizing: border-box;
 }
 
-/* Icons Alignment */
-.DESKTOP-reservation .users,
-.DESKTOP-reservation .calendar,
-.DESKTOP-reservation .clock,
-.DESKTOP-reservation .clipboard,
-.DESKTOP-reservation .line,
-.DESKTOP-reservation .line-2 {
-  position: absolute;
-  left: 12px;               /* icon padding */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+.DESKTOP-reservation .special-req {
+  position: relative;
+  height: 120px;
+  margin: 12px 0;
+  padding-right: 8%;
+  box-sizing: border-box;
 }
+
+
 
 .DESKTOP-reservation .text-wrapper,
 .DESKTOP-reservation .text-wrapper-2,
