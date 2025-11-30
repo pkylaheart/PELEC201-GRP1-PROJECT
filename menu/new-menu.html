@@ -11,8 +11,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="new-menu.css">
 
+    <!-- DROP DOWN ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" /> -->
+
     <!-- SWIPERJS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 
 <body class="menu-body">
@@ -23,13 +28,19 @@
             <img src="../_ASSETS/nav-bar-assets/kawa_logo-nav.png" alt="Kawa Logo" class="nav-logo">
             <div class="middle-bar-links">
                 <a href="#" class="home-link nav-btn">Home</a>
-                <a href="#" class="menu-link nav-btn">Menu</a>
+                <div class="menu-btn">
+                    <a href="#" class="menu-link nav-btn">Menu</a>
+                    <span class="material-symbols-outlined nav-btn dropdown-btn">arrow_drop_down</span>
+                    <!-- DROPDOWN -->
+
+                </div>
                 <a href="#" class="about-link nav-btn">About</a>
                 <a href="#" class="reversation-link nav-btn">Reservation</a>
             </div>
             <button class="contact-btn">Contact</button>
         </nav>
     </header>
+    <!-- END OF NAVIGATION BAR -->
     
     <!-- MAIN -->
     <main class="menu-main">
@@ -54,12 +65,6 @@
                         <button class="special-button">Specials</button>
                         <button class="order-button" id="main-order-btn">Order Now</button>
                     </div>
-                </div>
-
-                <!-- CHOPSTICKS -->
-                <div class="chop-img-container">
-                    <img src="../_ASSETS/menu-landing-assets/chop1.png" alt="chopstick" class="chop1">
-                    <img src="../_ASSETS/menu-landing-assets/chop2.png" alt="chopstick" class="chop2">
                 </div>
             </div>
         </section>
@@ -324,89 +329,86 @@
                         <div class="main-menu-container">
 
                             <!-- MAKI ROLLS CATEGORY -->
-                            <h1 class="main-menu-sub-title">MAKI</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-california-maki.png" alt="california maki" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CALIFORNIA MAKI</p>
-                                            <p class="menu-price">₱ 160</p>
+                            <div class="second-box">
+                                <h1 class="main-menu-sub-title">MAKI</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-california-maki.png" alt="california maki" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CALIFORNIA MAKI</p>
+                                                <p class="menu-price">₱ 160</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">PHILADELPHIA MAKI</p>
+                                                <p class="menu-price">₱ 160</p>
+                                            </div>
                                         </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">PHILADELPHIA MAKI</p>
-                                            <p class="menu-price">₱ 160</p>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-crazy-maki.png" alt="crazy k maki" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CRAZY K MAKI</p>
+                                                <p class="menu-price">₱ 195</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">VOLCANO MAKI</p>
+                                                <p class="menu-price">₱ 180</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-tuna-maki.png" alt="tuna maki" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">TUNA MAKI</p>
+                                                <p class="menu-price">₱ 150</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">TEMPURA MAKI</p>
+                                                <p class="menu-price">₱ 170</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/rice-and-bento-assets/rice-pork-bibimbap.png" alt="transparent" class="main-menu-img transparent">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text"></p>
+                                                <p class="menu-price"></p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text"></p>
+                                                <p class="menu-price"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-waku-maki.png" alt="waku maki" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">WAKU MAKI</p>
+                                                <p class="menu-price">₱ 170</p>
+                                            </div>    
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">FUTO MAKI</p>
+                                                <p class="menu-price">₱ 220</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-salmon-aburi.png" alt="salmon aburi" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">SALMON ABURI</p>
+                                                <p class="menu-price">₱ 320</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-crazy-maki.png" alt="crazy k maki" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CRAZY K MAKI</p>
-                                            <p class="menu-price">₱ 195</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">VOLCANO MAKI</p>
-                                            <p class="menu-price">₱ 180</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-tuna-maki.png" alt="tuna maki" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">TUNA MAKI</p>
-                                            <p class="menu-price">₱ 150</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">TEMPURA MAKI</p>
-                                            <p class="menu-price">₱ 170</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/rice-and-bento-assets/rice-pork-bibimbap.png" alt="transparent" class="main-menu-img transparent">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text"></p>
-                                            <p class="menu-price"></p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text"></p>
-                                            <p class="menu-price"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-waku-maki.png" alt="waku maki" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">WAKU MAKI</p>
-                                            <p class="menu-price">₱ 170</p>
-                                        </div>    
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">FUTO MAKI</p>
-                                            <p class="menu-price">₱ 220</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-salmon-aburi.png" alt="salmon aburi" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">SALMON ABURI</p>
-                                            <p class="menu-price">₱ 320</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!-- DIVIDER -->
-                            <!-- <div class="wavy-line-container"><img src="../_ASSETS/menu-landing-assets/placeholder.svg" alt="wave-line" class="wavy-line"></div> -->
-
-                            <!-- SUSHI CATEGORY -->
-                            <div class="second-row">
+                                <!-- SUSHI CATEGORY -->
                                 <h1 class="main-menu-sub-title">SUSHI</h1>
                                 <div class="main-menu-box">
                                     <div class="main-menu-item">
@@ -447,179 +449,176 @@
                         <div class="main-menu-container">
 
                             <!-- MAKI ROLLS CATEGORY -->
-                            <h1 class="main-menu-sub-title">RAMEN</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-tonkotsu.png" alt="tonkotsu" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">TONKOTSU</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 175</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 275</p>
-                                                    <p class="menu-size">Full</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">AKA</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 195</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 295</p>
-                                                    <p class="menu-size">Full</p>
+                            <div class="second-box">
+                                <h1 class="main-menu-sub-title">RAMEN</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-tonkotsu.png" alt="tonkotsu" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">TONKOTSU</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 175</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 275</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-tantanmen.png" alt="tantanmen" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">TANTANMEN</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 195</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 295</p>
-                                                    <p class="menu-size">Full</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">MISO</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 180</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 280</p>
-                                                    <p class="menu-size">Full</p>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">AKA</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 195</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 295</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-shoyu.png" alt="shoyu" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">SHOYU</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 180</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 280</p>
-                                                    <p class="menu-size">Full</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">KURU</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 195</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 295</p>
-                                                    <p class="menu-size">Full</p>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-tantanmen.png" alt="tantanmen" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">TANTANMEN</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 195</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 295</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-curry.png" alt="curry" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CURRY</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 180</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 280</p>
-                                                    <p class="menu-size">Full</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">PESTO</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 190</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 290</p>
-                                                    <p class="menu-size">Full</p>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">MISO</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 180</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 280</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-cheesy.png" alt="cheesy" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CHEESY RAMEN</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 195</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 295</p>
-                                                    <p class="menu-size">Full</p>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-shoyu.png" alt="shoyu" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">SHOYU</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 180</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 280</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CHEESY RABBOKI</p>
-                                            <div class="price-row">
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 180</p>
-                                                    <p class="menu-size">Half</p>
-                                                </div>
-                                                <div class="pricing">
-                                                    <p class="menu-price">₱ 280</p>
-                                                    <p class="menu-size">Full</p>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">KURU</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 195</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 295</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-salmon-aburi.png" alt="transparent" class="main-menu-img transparent">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text"></p>
-                                            <p class="menu-price"></p>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-curry.png" alt="curry" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CURRY</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 180</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 280</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">PESTO</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 190</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 290</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/noodles-cheesy.png" alt="cheesy" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CHEESY RAMEN</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 195</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 295</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CHEESY RABBOKI</p>
+                                                <div class="price-row">
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 180</p>
+                                                        <p class="menu-size">Half</p>
+                                                    </div>
+                                                    <div class="pricing">
+                                                        <p class="menu-price">₱ 280</p>
+                                                        <p class="menu-size">Full</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sushi-and-maki-assets/maki-salmon-aburi.png" alt="transparent" class="main-menu-img transparent">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text"></p>
+                                                <p class="menu-price"></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- DIVIDER -->
-                            <!-- <div class="wavy-line-container"><img src="../_ASSETS/menu-landing-assets/placeholder.svg" alt="wave-line" class="wavy-line"></div> -->
 
                             <!-- YAKITORI CATEGORY -->
-                            <div class="second-row">
                                 <h1 class="main-menu-sub-title">YAKITORI</h1>
                                 <div class="main-menu-box">
                                     <div class="main-menu-item">
@@ -671,34 +670,34 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
                             <!-- COLD SOBA CATEGORY -->
-                            <h1 class="main-menu-sub-title">COLD SOBA</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/cold-soba-tamago.png" alt="tamago" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">TAMAGO</p>
-                                            <p class="menu-price">₱ 150</p>
-                                        </div>    
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">TEMPURA</p>
-                                            <p class="menu-price">₱ 210</p>
+                                <h1 class="main-menu-sub-title">COLD SOBA</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/cold-soba-tamago.png" alt="tamago" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">TAMAGO</p>
+                                                <p class="menu-price">₱ 150</p>
+                                            </div>    
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">TEMPURA</p>
+                                                <p class="menu-price">₱ 210</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/cold-soba-gyoza.png" alt="gyoza shrimp" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">GYOZA SHRIMP</p>
-                                            <p class="menu-price">₱ 195</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">GYOZA PORK</p>
-                                            <p class="menu-price">₱ 195</p>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/noodles-and-grills-assets/cold-soba-gyoza.png" alt="gyoza shrimp" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">GYOZA SHRIMP</p>
+                                                <p class="menu-price">₱ 195</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">GYOZA PORK</p>
+                                                <p class="menu-price">₱ 195</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -713,74 +712,71 @@
                         <div class="main-menu-container">
 
                             <!-- TAKOYAKI CATEGORY -->
-                            <h1 class="main-menu-sub-title">Takoyaki</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-classic.png" alt="classic" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CLASSIC TAKOYAKI</p>
-                                            <p class="menu-price">₱ 145</p>
+                            <div class="second-box">
+                                <h1 class="main-menu-sub-title">Takoyaki</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-classic.png" alt="classic" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CLASSIC TAKOYAKI</p>
+                                                <p class="menu-price">₱ 145</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">SPICY TAKOYAKI</p>
+                                                <p class="menu-price">₱ 145</p>
+                                            </div>
                                         </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">SPICY TAKOYAKI</p>
-                                            <p class="menu-price">₱ 145</p>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-hot-spicy.png" alt="spicy hot" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">HOT & SPICY TAKOYAKI</p>
+                                                <p class="menu-price">₱ 165</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CHEESY TAKOYAKI</p>
+                                                <p class="menu-price">₱ 140</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-pork-floss.png" alt="pork floss" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">PORK FLOSS TAKOYAKI</p>
+                                                <p class="menu-price">₱ 165</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">EBI TAKOYAKI</p>
+                                                <p class="menu-price">₱ 180</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item trays-item">
+                                        <!-- <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-pork-floss.png" alt="transparent" class="main-menu-img transparent"> -->
+                                        <div class="main-menu-text trays-text">
+                                            <p class="main-menu-note">TRAYS:</p>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">18 PIECES TAKOYAKI</p>
+                                                <p class="menu-price">₱ 295</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">24 PIECES TAKOYAKI</p>
+                                                <p class="menu-price">₱ 420</p>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu-text trays-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">72 PIECES TAKOYAKI</p>
+                                                <p class="menu-price">₱ 995</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-hot-spicy.png" alt="spicy hot" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">HOT & SPICY TAKOYAKI</p>
-                                            <p class="menu-price">₱ 165</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CHEESY TAKOYAKI</p>
-                                            <p class="menu-price">₱ 140</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-pork-floss.png" alt="pork floss" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">PORK FLOSS TAKOYAKI</p>
-                                            <p class="menu-price">₱ 165</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">EBI TAKOYAKI</p>
-                                            <p class="menu-price">₱ 180</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item trays-item">
-                                    <!-- <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-pork-floss.png" alt="transparent" class="main-menu-img transparent"> -->
-                                    <div class="main-menu-text trays-text">
-                                        <p class="main-menu-note">TRAYS:</p>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">18 PIECES TAKOYAKI</p>
-                                            <p class="menu-price">₱ 295</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">24 PIECES TAKOYAKI</p>
-                                            <p class="menu-price">₱ 420</p>
-                                        </div>
-                                    </div>
-                                    <div class="main-menu-text trays-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">72 PIECES TAKOYAKI</p>
-                                            <p class="menu-price">₱ 995</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- DIVIDER -->
-                            <!-- <div class="wavy-line-container"><img src="../_ASSETS/menu-landing-assets/placeholder.svg" alt="wave-line" class="wavy-line"></div> -->
 
                             <!-- SALAD CATEGORY -->
-                            <div class="second-row">
                                 <h1 class="main-menu-sub-title">SALAD</h1>
                                 <div class="main-menu-box">
                                     <div class="main-menu-item">
@@ -806,34 +802,34 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
                             <!-- SIDES CATEGORY -->
-                            <h1 class="main-menu-sub-title">SIDES</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/sides-fries.png" alt="fries" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">FRIES</p>
-                                            <p class="menu-price">₱ 120</p>
-                                        </div>    
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">WASABI FRIES</p>
-                                            <p class="menu-price">₱ 150</p>
+                                <h1 class="main-menu-sub-title">SIDES</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/sides-fries.png" alt="fries" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">FRIES</p>
+                                                <p class="menu-price">₱ 120</p>
+                                            </div>    
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">WASABI FRIES</p>
+                                                <p class="menu-price">₱ 150</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/sides-fish-fries.png" alt="fish fries" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">FISH FRIES</p>
-                                            <p class="menu-price">₱ 210</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">RICE</p>
-                                            <p class="menu-price">₱ 35</p>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/sides-fish-fries.png" alt="fish fries" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">FISH FRIES</p>
+                                                <p class="menu-price">₱ 210</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">RICE</p>
+                                                <p class="menu-price">₱ 35</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -848,67 +844,64 @@
                         <div class="main-menu-container">
 
                             <!-- TAKOYAKI CATEGORY -->
-                            <h1 class="main-menu-sub-title">Lemonade</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/lemonade-classic.png" alt="lemonade classic" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CLASSIC</p>
-                                            <p class="menu-price">₱ 85</p>
+                            <div class="second-box">
+                                <h1 class="main-menu-sub-title">Lemonade</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/lemonade-classic.png" alt="lemonade classic" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CLASSIC</p>
+                                                <p class="menu-price">₱ 85</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">YAKULADE</p>
+                                                <p class="menu-price">₱ 105</p>
+                                            </div>
                                         </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">YAKULADE</p>
-                                            <p class="menu-price">₱ 105</p>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/lemonade-strawberry.png" alt="lemonade strawberry" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">STRAWBERRY</p>
+                                                <p class="menu-price">₱ 95</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">BLUEBERRY</p>
+                                                <p class="menu-price">₱ 95</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/lemonade-green-apple.png" alt="lemonade green apple" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">GREEN APPLE</p>
+                                                <p class="menu-price">₱ 95</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">LYCHEE</p>
+                                                <p class="menu-price">₱ 95</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-pork-floss.png" alt="transparent" class="main-menu-img transparent">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text"></p>
+                                                <p class="menu-price"></p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text"></p>
+                                                <p class="menu-price"></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/lemonade-strawberry.png" alt="lemonade strawberry" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">STRAWBERRY</p>
-                                            <p class="menu-price">₱ 95</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">BLUEBERRY</p>
-                                            <p class="menu-price">₱ 95</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/lemonade-green-apple.png" alt="lemonade green apple" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">GREEN APPLE</p>
-                                            <p class="menu-price">₱ 95</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">LYCHEE</p>
-                                            <p class="menu-price">₱ 95</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/sides-and-snacks-assets/takoyaki-pork-floss.png" alt="transparent" class="main-menu-img transparent">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text"></p>
-                                            <p class="menu-price"></p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text"></p>
-                                            <p class="menu-price"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- DIVIDER -->
-                            <!-- <div class="wavy-line-container"><img src="../_ASSETS/menu-landing-assets/placeholder.svg" alt="wave-line" class="wavy-line"></div> -->
 
                             <!-- TEA CATEGORY -->
-                            <div class="second-row">
                                 <h1 class="main-menu-sub-title">TEA</h1>
                                 <div class="main-menu-box">
                                     <div class="main-menu-item">
@@ -960,67 +953,65 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- FRAPPUCINO CATEGORY -->
-                            <h1 class="main-menu-sub-title">FRAPPUCINO</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-moca.png" alt="mocha" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">MOCHA</p>
-                                            <p class="menu-price">₱ 160</p>
-                                        </div>    
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CARAMEL</p>
-                                            <p class="menu-price">₱ 145</p>
+                                <!-- FRAPPUCINO CATEGORY -->
+                                <h1 class="main-menu-sub-title">FRAPPUCINO</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-moca.png" alt="mocha" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">MOCHA</p>
+                                                <p class="menu-price">₱ 160</p>
+                                            </div>    
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CARAMEL</p>
+                                                <p class="menu-price">₱ 145</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-coffee-jelly.png" alt="coffe jelly" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">COFFE JELLY</p>
+                                                <p class="menu-price">₱ 155</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CARAMEL COFFEE JELLY</p>
+                                                <p class="menu-price">₱ 185</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-java-chips.png" alt="java chips" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">JAVA CHIPS</p>
+                                                <p class="menu-price">₱ 185</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CRUNCHY LOTUS FRAPPE</p>
+                                                <p class="menu-price">₱ 195</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-coffee-jelly.png" alt="transparent" class="main-menu-img transparent">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text"></p>
+                                                <p class="menu-price"></p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text"></p>
+                                                <p class="menu-price"></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-coffee-jelly.png" alt="coffe jelly" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">COFFE JELLY</p>
-                                            <p class="menu-price">₱ 155</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CARAMEL COFFEE JELLY</p>
-                                            <p class="menu-price">₱ 185</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-java-chips.png" alt="java chips" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">JAVA CHIPS</p>
-                                            <p class="menu-price">₱ 185</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CRUNCHY LOTUS FRAPPE</p>
-                                            <p class="menu-price">₱ 195</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/frappucino-coffee-jelly.png" alt="transparent" class="main-menu-img transparent">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text"></p>
-                                            <p class="menu-price"></p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text"></p>
-                                            <p class="menu-price"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- SPARKLING BOBA CATEGORY -->
-                            <div class="second-row">
                                 <h1 class="main-menu-sub-title">SPARKLING BOBA</h1>
                                 <div class="main-menu-box">
                                     <div class="main-menu-item">
@@ -1072,60 +1063,60 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
                             <!-- FRANILLA CATEGORY -->
-                            <h1 class="main-menu-sub-title">FRANILLA</h1>
-                            <div class="main-menu-box">
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/franilla-choco-truffles.png" alt="choco truffles" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">CHOCOLATE TRUFFLES</p>
-                                            <p class="menu-price">₱ 135</p>
-                                        </div>    
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">OREO</p>
-                                            <p class="menu-price">₱ 155</p>
+                                <h1 class="main-menu-sub-title">FRANILLA</h1>
+                                <div class="main-menu-box">
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/franilla-choco-truffles.png" alt="choco truffles" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">CHOCOLATE TRUFFLES</p>
+                                                <p class="menu-price">₱ 135</p>
+                                            </div>    
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">OREO</p>
+                                                <p class="menu-price">₱ 155</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/franilla-nutella.png" alt="nutela" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">NUTELLA</p>
-                                            <p class="menu-price">₱ 180</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">KAWA SIGNATURE</p>
-                                            <p class="menu-price">₱ 185</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/franilla-matcha.png" alt="matcha" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">MATCHA</p>
-                                            <p class="menu-price">₱ 155</p>
-                                        </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">MATCHA OREO</p>
-                                            <p class="menu-price">₱ 180</p>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/franilla-nutella.png" alt="nutela" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">NUTELLA</p>
+                                                <p class="menu-price">₱ 180</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">KAWA SIGNATURE</p>
+                                                <p class="menu-price">₱ 185</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="main-menu-item">
-                                    <img src="../_ASSETS/Items-Img/drinks-assets/franilla-strawberry.png" alt="strawberry" class="main-menu-img">
-                                    <div class="main-menu-text">
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">STRAWBERRY</p>
-                                            <p class="menu-price">₱ 155</p>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/franilla-matcha.png" alt="matcha" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">MATCHA</p>
+                                                <p class="menu-price">₱ 155</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">MATCHA OREO</p>
+                                                <p class="menu-price">₱ 180</p>
+                                            </div>
                                         </div>
-                                        <div class="menu-group-text">
-                                            <p class="menu-text">BLUEBERRY</p>
-                                            <p class="menu-price">₱ 150</p>
+                                    </div>
+                                    <div class="main-menu-item">
+                                        <img src="../_ASSETS/Items-Img/drinks-assets/franilla-strawberry.png" alt="strawberry" class="main-menu-img">
+                                        <div class="main-menu-text">
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">STRAWBERRY</p>
+                                                <p class="menu-price">₱ 155</p>
+                                            </div>
+                                            <div class="menu-group-text">
+                                                <p class="menu-text">BLUEBERRY</p>
+                                                <p class="menu-price">₱ 150</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1136,8 +1127,12 @@
             </div>                
             <button class="order-menu-button" id="menu-order-btn">Order Now</button>
         </section>
-    </main>
+        <!-- END OF MENU LIST -->
 
+    </main>
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
     <footer class="footer-section">
         <div class="footer-content">
             <div class="footer-left-content">
@@ -1174,6 +1169,7 @@
             </div>
         </div>
     </footer>
+    <!-- END OF FOOTER -->
 
     <!-- SWIPERJS SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
