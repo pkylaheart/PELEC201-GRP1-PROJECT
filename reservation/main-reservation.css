@@ -74,6 +74,7 @@
 /* -------------------------------------------------- */
 
 .reservation-box {
+  font-family: Arial, sans-serif;
   position: absolute;
   top: 180px;
   left: 50%;
@@ -88,6 +89,16 @@
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   z-index: 999 !important;
 }
+
+#step1, #step2 {
+  display: flex;           /* keep their flex layout */
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;            /* auto height */
+  min-height: 420px;       /* match Step 1 natural height */
+}
+
 
 /* -------------------------------------------------- */
 /* FORM FIELDS (updated with your code)               */
@@ -226,6 +237,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* -------------------------------------------------- */
 
 .step-buttons {
+  font-family: "Lilita One-Regular", Helvetica;
   display: flex;
   justify-content: space-between;
   gap: 15px;
@@ -337,6 +349,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   box-sizing: border-box;
 }
+
+
+
 
 /* -------------------------------------------------- */
 /* POPUP (DO NOT TOUCH)                               */
