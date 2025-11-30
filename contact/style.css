@@ -1,5 +1,8 @@
 body {
     background: #FBF5F6;
+    width: 1440px;
+    min-height: 1363px;
+    margin: 0 auto;
 }
 
 /* Main Page Heading */
@@ -21,8 +24,13 @@ h2 {
     margin: 0 0 10px 0;
 }
 
-.DescHead { text-align: left; }
-.DetailsHead { text-align: right; }
+.deschead {
+    text-align: left;
+}
+
+.detailshead {
+    text-align: right;
+}
 
 /* Main content: two columns */
 .main-content {
@@ -35,21 +43,21 @@ h2 {
     padding: 0 20px;
 }
 
-/* Left column: Set it to block to avoid flex properties */
+/* Left column */
 .left-column {
     flex: 1;
-    display: block;  /* Ensure it's block-level */
+    display: block;
 }
 
 /* Left paragraph */
-.Description {
+.description {
     font-size: 18px;
     color: #000;
     font-family: "Inter", sans-serif;
     line-height: 1.6;
 }
 
-/* Right column: details + form */
+/* Right column */
 .right-column {
     flex: 0 0 387px;
     display: flex;
@@ -58,15 +66,15 @@ h2 {
     gap: 20px;
 }
 
-/* Paragraph under right H2 */
-.Details {
+/* Right paragraph */
+.details {
     text-align: right;
     font-size: 18px;
     font-family: "Inter", sans-serif;
     margin: 0 0 10px 0;
 }
 
-/* Form rows */
+/* Form */
 .form-container {
     display: flex;
     flex-direction: column;
@@ -102,21 +110,46 @@ h2 {
 }
 
 .form-row textarea {
-    height: 100px;
+    height: 150px;
+    width: 350px;
     resize: vertical;
 }
 
 /* Bold for Kawa span */
-.Kawa {
+.kawa {
     font-weight: bold;
 }
 
+/* Button styling */
+.button-row {
+    display: flex;
+    width: 183px;
+    height: 45px;
+    padding: 11px 45px 11px 46px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid #C70742;
+    background-color: #C70742; /* default color */
+    font-family: "Lilita One", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-row:hover {
+    background-color: #F06285;
+    border-color: #F06285;
+}
+
+
 /* Styling the image */
 .desc-image {
-    width: 100%; /* Make the image responsive */
-    max-width: 600px; /* Limit the image size */
-    display: block; /* Ensure it's a block-level element */
-    margin-top: 20px; /* Add space between the paragraph and the image */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
 }

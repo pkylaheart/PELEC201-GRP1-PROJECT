@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Kawa Restaurant - Reservation</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="new-reservation.css" />
+  </head>
+  
+  <body>
+    <main class="DESKTOP-reservation">
+      <img class="bundok" src="/_ASSETS/reservation-assets/bundok.png" alt="Mountain landscape background" />
+      <img class="petals-right" src="/_ASSETS/reservation-assets/petals-right.png" alt="Cherry blossom petals decoration" />
+      <img class="petals-left" src="/_ASSETS/reservation-assets/petals-left.png" alt="Cherry blossom petals decoration" />
+      <img class="cherry-blossom-top" src="/_ASSETS/reservation-assets/cherry-blossom-top.png" alt="Cherry blossom branch decoration" />
+      <div class="rectangle" aria-hidden="true"></div>
+      <img class="img" src="/_ASSETS/reservation-assets/Rectangle-132.png" alt="Decorative background shape" />
+      <section class="card" aria-label="Reservation form">
+        <form>
+          <div class="customers">
+            <div class="customer-box"></div>
+            <img class="user-icon" src="/_ASSETS/reservation-assets/customer.png" alt="" aria-hidden="true" />
+            <select id="customers" name="customers" class="select-field" aria-label="Number of customers">
+              <option value="">Select number of customers</option>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6">6 people</option>
+              <option value="7">7 people</option>
+              <option value="8">8 people</option>
+            </select>
+          </div>
+          <div class="date">
+            <div class="date-box"></div>
+            <img class="calendar" src="/_ASSETS/reservation-assets/date.png" alt="" aria-hidden="true" />
+            <input type="date" name="date" class="date-field" aria-label="Reservation date" />
+          </div>
+          <div class="time">
+            <div class="time-box"></div>
+            <img class="clock" src="/_ASSETS/reservation-assets/time.png" alt="" aria-hidden="true" />
+            <input type="time" id="time" name="time" class="time-field" aria-label="Reservation time" />
+          </div>
+          <div class="special-req">
+            <div class="group-5">
+              <div class="special-req-box"></div>
+            </div>
+            <label for="special-requests" class="p"
+              >Write your special requests here (e.g., table by the window, birthday setup, etc.)</label>
+            <textarea
+              id="special-requests"
+              name="special-requests"
+              class="textarea-field"
+              aria-label="Special requests">
+            </textarea>
+            <img class="clipboard" src="/_ASSETS/reservation-assets/personal-req.png" alt="" aria-hidden="true" />
+          </div>
+        </form>
+      </section>
+      <div class="popup-overlay" id="popup">
+      <button type="submit" class="numbers"><span class="element">CONFIRM</span></button>
+      <button type="button" class="element-wrapper"><span class="element">OK</span></button>
+      <div class="popup-box">
+      <div class="popup-text">
+        Table is kept for 30 minutes after reservation time.<br>
+        We appreciate you being on time.
+      </div>
+      <button class="popup-btn" id="popupBtn">OK</button>
+      </div>
+      </div>
+      <div class="element-eb-df-cf" aria-hidden="true"></div>
+      <img class="cherry-blossom" src="/_ASSETS/reservation-assets/cherry-blossom-bottom.png" alt="Cherry blossom decoration" />
+    </main>
+  </body>
+</html>
