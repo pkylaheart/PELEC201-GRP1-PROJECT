@@ -79,23 +79,7 @@
   </div>
 </div>
 
-<script>
-  const popup = document.getElementById('popup');
-  const popupBtn = document.getElementById('popupBtn');
 
-  // Always show popup for testing (remove this 'if(true)' for production)
-  if (true) {
-    popup.classList.remove('hidden');
-  }
-
-  // Hide popup permanently on click and remember dismissal
-  popupBtn.addEventListener('click', () => {
-    popup.classList.add('hidden');
-    localStorage.setItem('popupDismissed', 'true');
-  });
-
-  
-</script>
 
 </body>
 </html>

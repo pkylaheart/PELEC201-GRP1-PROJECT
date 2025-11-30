@@ -1,182 +1,209 @@
- body {
-    font-family: Arial, sans-serif;
-    background: #f8f8f8;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-  }
-
-  .reservation-box {
-    background: white;
-    border-radius: 20px;
-    padding: 30px;
-    width: 360px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  /* Make steps take full height */
-#step1, #step2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 100%;
+ .DESKTOP-reservation {
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 246, 246, 1) 0%,
+    rgba(255, 208, 208, 1) 100%
+  );
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1463px;
+  position: relative;
 }
 
 
-  .field {
-    position: relative;
-  }
+.DESKTOP-reservation .bundok {
+  position: absolute;
+  top: 667px;
+  left: 0;
+  width: 1445px;
+  height: 462px;
+  aspect-ratio: 3.13;
+}
+.DESKTOP-reservation .petals-right {
+  position: absolute;
+  top: 107px;
+  left: 948px;
+  width: 670px;
+  height: 444px;
+  aspect-ratio: 1.51;
+}
+.DESKTOP-reservation .petals-left {
+  position: absolute;
+  top: 507px;
+  left: 0;
+  width: 304px;
+  height: 319px;
+  aspect-ratio: 0.95;
+}
+.DESKTOP-reservation .cherry-blossom-top {
+  position: absolute;
+  top: 141px;
+  left: -4px;
+  width: 523px;
+  height: 338px;
+  aspect-ratio: 1.55;
+}
 
-  label {
-    font-weight: 600;
-    display: block;
-    margin-bottom: 6px;
-  }
 
-  select#customers {
-    width: 100%;
-    padding: 12px 16px;
-    font-size: 16px;
-    border-radius: 16px;
-    border: 1.5px solid #ccc;
-    cursor: pointer;
-    background: white;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  select#customers::-ms-expand { display: none; }
+.DESKTOP-reservation .cherry-blossom {
+  position: absolute;
+  top: 520px;
+  left: 967px;
+  width: 591px;
+  height: 591px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
 
-  /* Calendar */
-  #calendar {
-    border: 1.5px solid #ccc;
-    border-radius: 16px;
-    padding: 15px;
-    background: white;
-  }
-  #calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-    font-weight: 600;
-    font-size: 16px;
-  }
-  #calendar-header button {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: #666;
-    padding: 0 8px;
-    border-radius: 6px;
-    transition: background-color 0.2s;
-  }
-  #calendar-header button:hover { background-color: #eee; }
-  #calendar-days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    font-weight: 600;
-    color: #666;
-    margin-bottom: 8px;
-  }
-  #calendar-days div { text-align: center; padding: 6px 0; }
-  #calendar-dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 6px;
-  }
-  #calendar-dates button {
-    border: none;
-    background: #fff;
-    border-radius: 12px;
-    padding: 10px 0;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.25s, color 0.25s;
-  }
-  #calendar-dates button:hover:not(:disabled) { background-color: #eee; }
-  #calendar-dates button:disabled { cursor: default; color: #ccc; background: #f9f9f9; }
-  #calendar-dates button.selected { background-color: #008cba; color: white; font-weight: 700; }
+/*FIXED DO NOT TOUCH THIS CODE ALREADY RESPONSIVE */
 
-  /* Step 2 container */
-  #step2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* same spacing as Step 1 */
-    width: 100%; 
-  }
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
-  /* Time picker styling */
-  #time-select {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 16px;
-    border: 1.5px solid #ccc;
-    font-size: 16px;
-    background: white;
-    position: relative;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  #time-select:after {
-    content: "▼";
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #666;
-    pointer-events: none;
-    font-size: 12px;
-  }
-  #time-options {
-    width: 100%;
-    margin-top: 6px;
-    border-radius: 12px;
-    border: 1.3px solid #ccc;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    max-height: 120px;
-    overflow-y: auto;
-    position: absolute;
-    z-index: 100;
-    display: none;
-  }
-  #time-options div { padding: 10px 15px; cursor: pointer; }
-  #time-options div:hover { background-color: #eee; }
+/* Hidden */
+.popup-overlay.hidden {
+  display: none;
+}
 
-  /* Special requests textarea */
-  textarea {
-    width: 100%;
-    min-height: 70px;
-    border-radius: 16px;
-    border: 1.5px solid #ccc;
-    padding: 12px 16px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    background: white;
-    resize: vertical;
-    box-sizing: border-box;
-  }
+/* Glass popup bar */
+.popup-box {
+  width: 90%;
+  max-width: 950px;
+  background: rgba(255, 214, 223, 0.35); /* GLASS EFFECT */
+  padding: 35px 45px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.5);
+}
 
-  /* Step buttons */
-  .step-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  .step-buttons button {
-    padding: 10px 20px;
-    border-radius: 16px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 14px;
-    color: white;
-    background-color: #008cba;
-    transition: background-color 0.2s;
-  }
-  .step-buttons button:hover { background-color: #006b93; }
+/* Text */
+.popup-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* OK Button */
+.popup-btn {
+  padding: 16px 55px;
+  background: #ff94b3;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.popup-btn:hover {
+  background: #ff7ca2;
+}
+
+/*FIXED DO NOT TOUCH THE CODE ALREADY RESPONSIVE */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+}
+
+.reservation-box {
+  background: #fff;
+  padding: 35px; /* increased for breathing room */
+  width: 420px; /* was 330px -> less squished */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+  position: relative;
+  z-index: 30;
+}
+
+
+.field {
+  position: relative;
+  width: 100%;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  border: 1.3px solid #ccc;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Make input text transparent by default (hides default placeholder) */
+input[type="date"],
+input[type="time"] {
+  color: transparent;
+}
+
+/* Custom placeholder style */
+.custom-placeholder {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+  user-select: none;
+  font-size: 16px;
+}
+
+/* When input has value, show text and hide placeholder */
+input[type="date"]:valid,
+input[type="time"]:valid {
+  color: black;
+}
+
+input[type="date"]:valid + .custom-placeholder,
+input[type="time"]:valid + .custom-placeholder {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  height: 70px;
+  border-radius: 16px;
+  border: 1.3px solid #ccc;
+  padding: 14px 18px;
+  font-size: 16px;
+  background: #fff;
+}
+
+/* hide icons but keep picker working */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
+
+

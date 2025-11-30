@@ -1,4 +1,4 @@
-// --- Calendar setup ---
+  // --- Calendar setup ---
   const calendarDates = document.getElementById('calendar-dates');
   const monthYear = document.getElementById('month-year');
   const prevMonthBtn = document.getElementById('prev-month');
@@ -65,4 +65,21 @@
     if(!selectedTime){alert("Select a time.");return;}
     alert("Reservation submitted!\nDate: "+selectedDate+"\nTime: "+selectedTime+"\nCustomers: "+document.getElementById('customers').value);
   });
-</script>
+
+
+    // POP UP DO NOT TOUCH
+    
+  const popup = document.getElementById('popup');
+  const popupBtn = document.getElementById('popup-ok'); // ONLY once
+
+  // Show popup unless already dismissed
+  if (!localStorage.getItem('popupDismissed')) {
+    popup.classList.remove('hidden');
+  }
+
+  // Hide popup permanently on click
+  popupBtn.addEventListener('click', () => {
+    popup.classList.add('hidden');
+    localStorage.setItem('popupDismissed', 'true');
+  });
+

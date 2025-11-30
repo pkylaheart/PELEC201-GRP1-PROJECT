@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Kawa Restaurant - Reservation</title>
+
     <link rel="stylesheet" href="main-reservation.css">
-    <link rel="stylesheet" href="reservation.js">
-  </head>
+    <script src="reservation.js" defer></script>
+    </head>
   
-  <body>
+    <body>
     <main class="DESKTOP-reservation">
-      <img class="bundok" src="/_ASSETS/reservation-assets/bundok.png" alt="Mountain landscape background" />
-      <img class="petals-right" src="/_ASSETS/reservation-assets/petals-right.png" alt="Cherry blossom petals decoration" />
-      <img class="petals-left" src="/_ASSETS/reservation-assets/petals-left.png" alt="Cherry blossom petals decoration" />
-      <img class="cherry-blossom-top" src="/_ASSETS/reservation-assets/cherry-blossom-top.png" alt="Cherry blossom branch decoration" />
-      <div class="rectangle" aria-hidden="true"></div>
-      <img class="img" src="/_ASSETS/reservation-assets/Rectangle-132.png" alt="Decorative background shape" /><section class="card" aria-label="Reservation form">
+        <img class="bundok" src="/_ASSETS/reservation-assets/bundok.png" alt="Mountain landscape background" />
+        <img class="petals-right" src="/_ASSETS/reservation-assets/petals-right.png" alt="Cherry blossom petals decoration" />
+        <img class="petals-left" src="/_ASSETS/reservation-assets/petals-left.png" alt="Cherry blossom petals decoration" />
+        <img class="cherry-blossom-top" src="/_ASSETS/reservation-assets/cherry-blossom-top.png" alt="Cherry blossom branch decoration" />
+        <div class="rectangle" aria-hidden="true"></div>
+        <img class="img" src="/_ASSETS/reservation-assets/Rectangle-132.png" alt="Decorative background shape" />
+
         <div class="reservation-box">
-        <div id="step1">
-            <div class="field">
-            <label>No. of Customers</label>
-            <select id="customers">
-                <option value="" disabled selected>Select number</option>
-                <option>1</option><option>2</option><option>3</option><option>4+</option>
-            </select>
-            </div>
-
-            <div class="field">
-            <label>Date</label>
-            <div id="calendar">
-                <div id="calendar-header">
-                <button id="prev-month">&lt;</button>
-                <div id="month-year"></div>
-                <button id="next-month">&gt;</button>
+            <!-- Step 1 -->
+            <div id="step1">
+                <div class="field">
+                <label>No. of Customers</label>
+                <select id="customers">
+                    <option value="" disabled selected>Select number</option>
+                    <option>1</option><option>2</option><option>3</option><option>4+</option>
+                </select>
                 </div>
-                <div id="calendar-days">
-                <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div>
-                <div>Thu</div><div>Fri</div><div>Sat</div>
+
+                <div class="field">
+                <label>Date</label>
+                <div id="calendar">
+                    <div id="calendar-header">
+                    <button id="prev-month">&lt;</button>
+                    <div id="month-year"></div>
+                    <button id="next-month">&gt;</button>
+                    </div>
+                    <div id="calendar-days">
+                    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div>
+                    <div>Thu</div><div>Fri</div><div>Sat</div>
+                    </div>
+                    <div id="calendar-dates"></div>
                 </div>
-                <div id="calendar-dates"></div>
-            </div>
+                </div>
+
+                <div class="step-buttons">
+                <div></div> <!-- empty placeholder -->
+                <button id="next-step1">Next</button>
+                </div>
             </div>
 
-            <div class="step-buttons">
-            <div></div> <!-- empty placeholder -->
-            <button id="next-step1">Next</button>
+            <!-- Step 2 -->
+            <div id="step2" style="display:none;">
+                <div class="field" style="position:relative;">
+                <label>Time</label>
+                <div id="time-select">Select a time</div>
+                <div id="time-options"></div>
+                </div>
+
+                <div class="field">
+                <label>Special Requests</label>
+                <textarea placeholder="Write your special requests here..."></textarea>
+                </div>
+
+                <div class="step-buttons">
+                <button id="back-step2">Back</button>
+                <button id="submit-btn">Submit</button>
+                </div>
             </div>
         </div>
 
-        <!-- Step 2 -->
-        <div id="step2" style="display:none;">
-            <div class="field" style="position:relative;">
-            <label>Time</label>
-            <div id="time-select">Select a time</div>
-            <div id="time-options"></div>
-            </div>
+        <!-- POPUP DO NOT TOUCH -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-box">
+            <p class="popup-text">
+                Table is kept for 30 minutes after reservation time.<br>
+                We appreciate you being on time.
+            </p>
 
-            <div class="field">
-            <label>Special Requests</label>
-            <textarea placeholder="Write your special requests here..."></textarea>
-            </div>
-
-            <div class="step-buttons">
-            <button id="back-step2">Back</button>
-            <button id="submit-btn">Submit</button>
+            <button class="popup-btn" id="popup-ok">OK</button>
             </div>
         </div>
-        </div>
+        <!-- POPUP DO NOT TOUCH -->
 
-      <button type="button" class="element-wrapper"><span class="element">OK</span></button>
-      <p class="table-is-kept-for">
-        Table is kept for 30 minutes after reservation time.<br />We appreciate you being on time.
-      </p>
-      <div class="element-eb-df-cf" aria-hidden="true"></div>
-      <img class="cherry-blossom" src="/_ASSETS/reservation-assets/cherry-blossom-bottom.png" alt="Cherry blossom decoration" />
+        <div class="element-eb-df-cf" aria-hidden="true"></div>
+
+        <img class="cherry-blossom" 
+            src="/_ASSETS/reservation-assets/cherry-blossom-bottom.png" 
+            alt="Cherry blossom decoration" />
     </main>
+  </body>
+</html>
