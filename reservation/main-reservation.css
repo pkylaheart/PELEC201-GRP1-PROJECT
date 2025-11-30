@@ -15,59 +15,67 @@
   position: relative;
 }
 
+
 /* -------------------------------------------------- */
 /* BACKGROUND DECOR IMAGES                            */
 /* -------------------------------------------------- */
-
-.DESKTOP-reservation img {
-  position: absolute;
-  z-index: 0;
-}
-
 .DESKTOP-reservation .bundok {
+  position: absolute;
   top: 667px;
   left: 0;
   width: 1445px;
   height: 462px;
+  aspect-ratio: 3.13;
 }
-
 .DESKTOP-reservation .petals-right {
+  position: absolute;
   top: 107px;
   left: 948px;
   width: 670px;
   height: 444px;
+  aspect-ratio: 1.51;
 }
-
 .DESKTOP-reservation .petals-left {
+  position: absolute;
   top: 507px;
   left: 0;
   width: 304px;
   height: 319px;
+  aspect-ratio: 0.95;
 }
-
 .DESKTOP-reservation .cherry-blossom-top {
+  position: absolute;
   top: 141px;
   left: -4px;
   width: 523px;
   height: 338px;
+  aspect-ratio: 1.55;
 }
 
+
 .DESKTOP-reservation .cherry-blossom {
+  position: absolute;
   top: 520px;
   left: 967px;
   width: 591px;
   height: 591px;
+  aspect-ratio: 1;
   object-fit: cover;
 }
 
 /* Background decorative rectangle */
 .img {
-  top: 200px;
+  position: absolute;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 900px;
-  z-index: 1 !important;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
+
+
 
 /* -------------------------------------------------- */
 /* RESERVATION BOX                                    */
