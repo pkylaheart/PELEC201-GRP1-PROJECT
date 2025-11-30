@@ -18,12 +18,6 @@ new Swiper('.cards-menu-wrapper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // Active card
-  on: {
-    slideChange: function () {
-    },
-  },
-
   // Responsive breakpoints
   breakpoints: {
     0: {
