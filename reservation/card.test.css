@@ -1,106 +1,21 @@
-/* -------------------------------------------------- */
-/* PAGE CONTAINER    DO NOT TOUCH                     */
-/* -------------------------------------------------- */
-
-.DESKTOP-reservation {
-  overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 246, 246, 1) 0%,
-    rgba(255, 208, 208, 1) 100%
-  );
-  width: 100%;
-  min-width: 1440px;
-  min-height: 1463px;
-  position: relative;
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
-
-/* -------------------------------------------------- */
-/* BACKGROUND DECOR IMAGES                            */
-/* -------------------------------------------------- */
-
-.DESKTOP-reservation img {
-  position: absolute;
-  z-index: 0; /* all decorations behind reservation box */
-}
-
-.DESKTOP-reservation .bundok {
-  top: 667px;
-  left: 0;
-  width: 1445px;
-  height: 462px;
-}
-
-.DESKTOP-reservation .petals-right {
-  top: 107px;
-  left: 948px;
-  width: 670px;
-  height: 444px;
-}
-
-.DESKTOP-reservation .petals-left {
-  top: 507px;
-  left: 0;
-  width: 304px;
-  height: 319px;
-}
-
-.DESKTOP-reservation .cherry-blossom-top {
-  top: 141px;
-  left: -4px;
-  width: 523px;
-  height: 338px;
-}
-
-.DESKTOP-reservation .cherry-blossom {
-  top: 520px;
-  left: 967px;
-  width: 591px;
-  height: 591px;
-  object-fit: cover;
-}
-
-/* -------------------------------------------------- */
-/* RECTANGLE 135 (BACKGROUND SHAPE)                    */
-/* -------------------------------------------------- */
-
-.img {
-  position: absolute;
-  top: 310px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  z-index: 1;
-}
-
-/* -------------------------------------------------- */
-/* RESERVATION BOX — CENTERED INSIDE RECTANGLE        */
-/* -------------------------------------------------- */
 
 .reservation-box {
-  position: absolute;
-
-  left: 50%;
-  transform: translateX(-50%);
-
-  /* moves box DOWN inside the rectangle */
-  top: 350px;
-
-  width: 460px;
-  background: white;
-  padding: 40px;
-  border-radius: 25px;
+  background: #fff;
+  padding: 25px;
+  width: 330px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-
-  z-index: 999 !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
-
-/* -------------------------------------------------- */
-/* FORM FIELDS (IMPROVED INPUT LOGIC)                */
-/* -------------------------------------------------- */
 
 .field {
   position: relative;
@@ -121,13 +36,13 @@ textarea {
   cursor: pointer;
 }
 
-/* Hide input text until a value is selected */
+/* Make input text transparent by default (hides default placeholder) */
 input[type="date"],
 input[type="time"] {
   color: transparent;
 }
 
-/* custom placeholder */
+/* Custom placeholder style */
 .custom-placeholder {
   position: absolute;
   left: 18px;
@@ -139,7 +54,7 @@ input[type="time"] {
   font-size: 16px;
 }
 
-/* show text AFTER selection */
+/* When input has value, show text and hide placeholder */
 input[type="date"]:valid,
 input[type="time"]:valid {
   color: black;
@@ -150,177 +65,18 @@ input[type="time"]:valid + .custom-placeholder {
   display: none;
 }
 
-/* hide built-in icons */
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="time"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-}
-
-/* textarea */
 textarea {
   resize: none;
   height: 70px;
   border-radius: 16px;
+  border: 1.3px solid #ccc;
   padding: 14px 18px;
   font-size: 16px;
-}
-
-/* -------------------------------------------------- */
-/* BUTTONS                                            */
-/* -------------------------------------------------- */
-
-.step-buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.step-buttons button {
-  padding: 12px 28px;
-  border: none;
-  border-radius: 40px;
-  background: #ff94b3;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.step-buttons button:hover {
-  background: #ff7ca2;
-}
-
-/* -------------------------------------------------- */
-/* CALENDAR STYLING                                   */
-/* -------------------------------------------------- */
-
-#calendar {
-  width: 100%;
   background: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  border: 1.5px solid #dcdcdc;
 }
 
-#calendar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
+/* hide icons but keep picker working */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
-
-#calendar-header button {
-  background: none;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  padding: 5px 10px;
-}
-
-#month-year {
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-}
-
-#calendar-days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #666;
-}
-
-#calendar-days div {
-  padding: 8px 0;
-}
-
-#calendar-dates {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
-}
-
-#calendar-dates button {
-  padding: 10px;
-  border: none;
-  background: #f3f3f3;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-/* disabled dates */
-#calendar-dates button:disabled {
-  background: #eaeaea;
-  color: #aaa;
-  cursor: not-allowed;
-}
-
-/* selected date */
-#calendar-dates button.selected {
-  background: #ff94b3;
-  color: white;
-  font-weight: bold;
-}
-
-/* hover */
-#calendar-dates button:not(:disabled):hover {
-  background: #ffd6e2;
-}
-
-/* -------------------------------------------------- */
-/* POPUP (UNCHANGED)                                  */
-/* -------------------------------------------------- */
-
-.popup-overlay {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-}
-
-.popup-overlay.hidden {
-  display: none;
-}
-
-.popup-box {
-  width: 90%;
-  max-width: 950px;
-  background: rgba(255, 214, 223, 0.35);
-  padding: 35px 45px;
-  border-radius: 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  border: 1px solid rgba(255,255,255,0.5);
-}
-
-.popup-text {
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000;
-  font-size: 16px;
-}
-
-.popup-btn {
-  padding: 16px 55px;
-  background: #ff94b3;
-  color: white;
-  border-radius: 50px;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.popup-btn:hover {
-  background: #ff7ca2;
-}
-
-/* -------------------------------------------------- */
-/* END OF FILE                                        */
-/* -------------------------------------------------- */
