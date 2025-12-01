@@ -251,10 +251,18 @@ body {
     top: 100px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh);
     z-index: 0;
     overflow: visible;
-    box-shadow: -1059px 0 148.3px 0 rgba(0, 0, 0, 0.66) inset;
+}
+
+.main-aboutbg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: -1259px 0 148.3px 0 rgba(0, 0, 0, 0.66) inset;
+    pointer-events: none;
+    z-index: 5;
 }
 
 .about-bg {
@@ -262,13 +270,14 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    margin-bottom: 70px;
 }
 
 .about-content {
     display: flex;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: 240px auto;
     padding: 60px 20px;
     justify-content: center;
     position: relative;
@@ -276,26 +285,24 @@ body {
 }
 
 .about-container {
-    margin-top: 140px;
+    position: sticky;
+    top: 120px;
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 40px 40px;
-    border-radius: 50px;
-    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.35);    
-    gap: 48px;
+    gap: 158px;
     justify-content: center;
-    background-color: #FEE8E8;
 }
 
 .about-logo {
-    width: 380px;
-    height: 380px;
+    width: 480px;
+    height: 480px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    z-index: 1;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    z-index: 20;
+    box-shadow: -30px 4px 16px rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
 .about-text-container {
@@ -304,13 +311,13 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .about-text-container .about-title {
-    color: #C70742;
+    color: #F894B0;
     font-family: "Lilita One";
-    font-size: 48px;
+    font-size: 78px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -326,10 +333,10 @@ body {
 }
 
 .about-text p {
-    color: #333;
+    color: #ffffff;
     text-align: left;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
