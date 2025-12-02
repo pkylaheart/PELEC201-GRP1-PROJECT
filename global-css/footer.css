@@ -1,25 +1,17 @@
-html {
-    scroll-behavior: smooth;
-}
+/* global-css/footer.css */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "inter", sans-serif;
 }
 
-.body-page {
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #f2f2f2;
-    font-family: "inter", sans-serif;
+html {
+    scroll-behavior: smooth;
 }
-
-/* FOOTER */
 
 .footer-section {
+    box-shadow: 0 -8px 19px 0 rgba(0, 0, 0, 0.25);
     clear: both;
     position: relative;
     width: 100%;
@@ -28,7 +20,7 @@ html {
     padding: 40px 60px;
     justify-content: center;
     gap: 40px;
-    background: #ffeaf0;
+    background: #FEE8E8;
 }
 
 .footer-content {
@@ -83,13 +75,18 @@ html {
     display: flex;
     gap: 7px;
     align-items: center;
-
 } 
+
 
 .footer-icons img {
     width: 29px;
     height: 29px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
 }
 
 .footer-quicklinks {
@@ -109,6 +106,11 @@ html {
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-quicklinks a:hover {
+    color: #C70742;
 }
 
 .footer-get-intouch {
@@ -118,7 +120,7 @@ html {
     gap: 12px;
 }
 
-.info {
+.foot-info {
     color: #333;
     font-family: Inter;
     font-size: 16px;
@@ -130,7 +132,7 @@ html {
     align-items: flex-start;
 }
 
-.info .icon {
+.info .foot-icon {
     width: 16px;
     height: 16px;
     margin-top: 2px;
