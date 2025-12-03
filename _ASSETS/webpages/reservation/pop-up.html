@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Popup Example</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: pink; /* Page background to make popup disappearance obvious */
+  }
+
+  /* Popup Background Overlay */
+  .popup-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  /* Hidden by default */
+  .popup-overlay.hidden {
+    display: none;
+  }
+
+  /* Popup Box */
+  .popup-box {
+    width: 90%;
+    max-width: 900px;
+    background: #ffe7e7;
+    padding: 40px 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 8px 7px 4px #00000040;
+  }
+
+  /* Text */
+  .popup-text {
+    font-size: 22px;
+    color: #333;
+    max-width: 70%;
+    line-height: 1.4;
+  }
+
+  /* OK Button */
+  .popup-btn {
+    padding: 18px 50px;
+    background: #ff94b3;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .popup-btn:hover {
+    background: #ff7ca2;
+  }
+</style>
+</head>
+<body>
+
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <div class="popup-text">
+      Table is kept for 30 minutes after reservation time.<br>
+      We appreciate you being on time.
+    </div>
+    <button class="popup-btn" id="popupBtn">OK</button>
+  </div>
+</div>
+
+
+
+</body>
+</html>
