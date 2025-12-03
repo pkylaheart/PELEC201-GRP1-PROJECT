@@ -1,0 +1,139 @@
+/* global-css/footer.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer-section {
+    box-shadow: 0 -8px 19px 0 rgba(0, 0, 0, 0.25);
+    clear: both;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    justify-content: center;
+    gap: 40px;
+    background: #FEE8E8;
+}
+
+.footer-content {
+    display: flex;
+    width: 1440px;
+    height: 349px;
+    padding: 0 120px 0 63px;
+    align-items: center;
+}
+
+.footer-left-content {
+    width: 362px;
+    height: 362px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.footer-right-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 123px;
+    margin-top: 19px
+}
+
+.foot-quote {
+    display: flex;
+    width: 263px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.col-title {
+    color: #FA6F96;
+    font-family: "Lilita One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.foot-quote p {
+    color: #333;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+} 
+
+
+.footer-icons img {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-quicklinks {
+    display: flex;
+    width: 101px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-right: 80px;
+}
+
+.footer-quicklinks a {
+    color: #333;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-quicklinks a:hover {
+    color: #C70742;
+}
+
+.footer-get-intouch {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 12px;
+}
+
+.foot-info {
+    color: #333;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 19px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info .foot-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
