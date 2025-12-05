@@ -21,6 +21,7 @@ html {
     justify-content: center;
     gap: 40px;
     background: #FEE8E8;
+    bottom: 0;
 }
 
 .footer-content {
@@ -41,7 +42,7 @@ html {
 .footer-right-content {
     display: flex;
     align-items: flex-start;
-    gap: 123px;
+    gap: 90px;
     margin-top: 19px
 }
 

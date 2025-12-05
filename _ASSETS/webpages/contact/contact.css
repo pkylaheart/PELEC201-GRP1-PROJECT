@@ -220,4 +220,9 @@ textarea:focus {
 .contact-icon {
     width: 30px;
     height: 30px;
+    transition: 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
 }

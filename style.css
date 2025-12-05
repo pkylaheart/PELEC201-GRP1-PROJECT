@@ -1,8 +1,25 @@
+/* IMPORTING FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 /* main*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f9e7e7;
+  background-color: #FBF5F6;
   font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .home {
@@ -28,6 +45,7 @@ body {
   font-weight: 1000;
   line-height: normal;
   margin-bottom: 25px;
+  text-align: left;
 }
 
 .sub-text {
@@ -48,30 +66,30 @@ body {
   cursor: pointer;
   margin-right: 20px;
   z-index: 3;
+  transition: 0.3s ease;
 }
 
 .about_us-button {
-  border: 3px solid #ff9e9e;
-  background: transparent;
-  color: #ff9e9e;
+  border: 3px solid #eb7878;
+  color: #eb7878;
 }
 
 .about_us-button:hover {
   color: #fff;
   background-color: #eb7878;
-  transform: 2s;
+  transform: scale(1.1);
 }
 
 .view_menu-button {
-  background: #f1b4c6;
-  border: none;
-  color: white;
+  border: 3px solid #ff92b3;
+  background: #ff92b3;
+  color: #fff;
 }
 
 .view_menu-button:hover {
-  color: #fff;
-  background-color: #eb7878;
-  transform: 2s;
+  color: #ff92b3;
+  background-color: transparent;
+  transform: scale(1.1);
 }
 
 .content-right {
@@ -126,7 +144,8 @@ h1 {
   font-weight: 800;
   line-height: normal;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .foodtxt {
@@ -209,23 +228,22 @@ h1 {
   justify-content: center;
   margin: auto;
   width: 184px;
-
   border-radius: 70px;
-
   color: #fff;
-  background-color: #f1b4c6;
-  border: 4px solid #f1b4c6;
+  background-color: #ff92b3;
+  border: 4px solid #ff92b3;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   padding: 15px;
+  transition: 0.3s ease;
 }
 
 .button:hover {
   background-color: transparent;
   color: #ff92b3;
-  transform: 2s;
+  transform: scale(1.1);
 }
 
 /* my code*/
@@ -243,10 +261,13 @@ body {
   display: flex;
   overflow-x: auto;
   background: #ffdee9;
+  margin-bottom: 140px;
 }
+
 .carousel::-webkit-scrollbar {
   display: none;
 }
+
 .group {
   display: flex;
   align-items: center;
@@ -255,6 +276,7 @@ body {
   animation: spin 10s linear infinite;
   padding-right: 1em;
 }
+
 .card {
   flex: 0 0 5em;
   height: 7em;
@@ -279,12 +301,12 @@ body {
   margin: auto;
   padding: 2em 0 0 0;
   text-align: center;
-
   position: relative;
 }
+
 .reviewcard {
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 250px;
   text-align: center;
   align-content: center;
   border: 2px solid #ffdee9;
@@ -296,7 +318,6 @@ body {
   background-color: #ffdee9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 15px;
-
   gap: 20px;
 }
 
@@ -307,9 +328,11 @@ body {
   height: 80px;
   margin-top: -5%;
 }
+
 .quotainer {
   display: inline-block;
 }
+
 .quoteimg {
   background: white;
   border-radius: 100%;
@@ -321,15 +344,18 @@ body {
   bottom: 3em;
   left: 50%;
 }
+
 /* image modif */
 #pngkawa {
   width: 100%;
   height: 100%;
 }
+
 #doublepng {
   width: 100%;
   height: 50%;
 }
+
 .starpng {
   width: 40%;
   height: 10%;
