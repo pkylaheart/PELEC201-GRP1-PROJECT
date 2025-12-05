@@ -136,16 +136,13 @@ body {
 }
 
 
-
-#step1,
-#step2 {
+#step1, #step2 {
+  min-height: 520px;   /* same height for both steps */
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  height: auto;
-  min-height: 420px;
+  justify-content: space-between;  /* keeps spacing natural */
 }
+
 
 /* -------------------------------------------------- */
 /* FORM FIELDS                                        */
@@ -155,6 +152,7 @@ body {
   position: relative;
   width: 100%;
 }
+
 
 select,
 input,
@@ -228,6 +226,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* Time field */
 #step2 .field:first-child {
   width: 100%;
+  max-width: 450px;        /* keeps consistent box width */
+
 }
 
 /* Special Request always full width */
@@ -305,6 +305,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 #calendar {
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   background: #fff;
   border-radius: 16px;
   padding: 14px 18px;
@@ -349,8 +351,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 #calendar-dates {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
 }
 
 #calendar-dates button {
