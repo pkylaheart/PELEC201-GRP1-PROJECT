@@ -100,20 +100,32 @@ body {
   width: fit-content;
   margin: 0 auto;
 }
-
-.img {
+.reservation-bg {
     position: absolute;
-    top: -50px; /* adjust until perfectly aligned */
     left: 50%;
     transform: translateX(-50%);
 
-    /* ⭐ THIS is the proportional scaling */
-    width: calc(100% + 200px);
-    height: auto;
+    /* Center vertically behind the box */
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-    pointer-events: none;
+    /* Proportional width & height */
+    width: calc(100% + 120px);
+    height: calc(100% + 160px);
+
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 45px;
+
+    box-shadow:
+        0px 40px 80px rgba(0, 0, 0, 0.20),
+        0px 8px 22px rgba(255, 255, 255, 0.45) inset;
+
     z-index: 0;
+    pointer-events: none;
 }
+
+
+
 
 /* -------------------------------------------------- */
 /* RESERVATION BOX                                    */
