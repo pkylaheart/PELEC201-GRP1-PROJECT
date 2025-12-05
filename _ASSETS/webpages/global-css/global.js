@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navButtons = [
         { selector: ".about_us-button", path: "about/about.html" },
         { selector: ".view_menu-button", path: "menu/menu.html" },
+        { selector: ".button", path: "menu/menu.html" },
         { selector: ".contact-btn", path: "contact/contact.html" }
     ];
 
