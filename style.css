@@ -27,12 +27,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 120px;
-  margin: 40px 0 20em 0;
+  padding: 80px auto;
+  margin: 130px 0 20em 0;
 }
 
 .content-left {
-  max-width: 550px;
+  max-width: 750px;
   padding-top: 40px;
 }
 
@@ -40,7 +40,7 @@ body {
   align-self: stretch;
   color: #f894b0;
   font-family: "Lilita One";
-  font-size: 45px;
+  font-size: 62px;
   font-style: normal;
   font-weight: 1000;
   line-height: normal;
@@ -50,7 +50,7 @@ body {
 
 .sub-text {
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 40px;
 }
