@@ -468,6 +468,11 @@
     align-items: stretch;
 }
 
+@font-face {
+    font-family: 'Secret Formula';
+    src: url("../../../assets/fonts/Secret Formula.otf") format("OpenType Font");
+}
+
 @media (max-width: 1024px) {
     .menu-navigation-bar {
         padding: 0 20px;
