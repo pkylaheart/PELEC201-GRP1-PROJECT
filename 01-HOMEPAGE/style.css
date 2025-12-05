@@ -1,7 +1,18 @@
+<<<<<<< Updated upstream:01-HOMEPAGE/style.css
+=======
+/* IMPORTING FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+>>>>>>> Stashed changes:style.css
 /* main*/
 
 body {
+<<<<<<< Updated upstream:01-HOMEPAGE/style.css
   background-color: #f9e7e7;
+=======
+  background-color: #fbf5f6;
+>>>>>>> Stashed changes:style.css
   font-family: Inter, sans-serif;
 }
 
@@ -257,9 +268,8 @@ body {
 }
 .card {
   flex: 0 0 5em;
-  height: 7em;
+  height: 100%;
   background: #ffdee9;
-  font-size: 3rem;
   border-radius: 0.2em;
   text-align: center;
   align-content: center;
@@ -275,7 +285,7 @@ body {
 }
 /* review card modif */
 .reviewcontainer {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding: 2em 0 0 0;
   text-align: center;
@@ -283,8 +293,13 @@ body {
   position: relative;
 }
 .reviewcard {
+<<<<<<< Updated upstream:01-HOMEPAGE/style.css
   width: 250px;
   height: 150px;
+=======
+  width: 30em;
+  height: 15em;
+>>>>>>> Stashed changes:style.css
   text-align: center;
   align-content: center;
   border: 2px solid #ffdee9;
@@ -327,8 +342,9 @@ body {
   height: 100%;
 }
 #doublepng {
-  width: 100%;
-  height: 50%;
+  height: 49.9%;
+
+  border-radius: 0.2em;
 }
 .starpng {
   width: 40%;
