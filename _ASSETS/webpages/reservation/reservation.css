@@ -102,14 +102,18 @@ body {
 }
 
 .img {
-  position: absolute;
-  top: -60px;            /* moves rectangle above reservation box */
-  left: 50%;
-  transform: translateX(-50%);
-  width: clamp(350px, 48vw, 700px);
-  z-index: 1;
-}
+    position: absolute;
+    top: -50px; /* adjust until perfectly aligned */
+    left: 50%;
+    transform: translateX(-50%);
 
+    /* ⭐ THIS is the proportional scaling */
+    width: calc(100% + 200px);
+    height: auto;
+
+    pointer-events: none;
+    z-index: 0;
+}
 
 /* -------------------------------------------------- */
 /* RESERVATION BOX                                    */
@@ -233,7 +237,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* Special Request always full width */
 #step2 .field textarea {
   width: 100%;
-  height: 120px;
+  height: 100px;
   resize: none;
   padding: 14px 18px;
   border-radius: 16px;
@@ -257,7 +261,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .time-tabs {
     display: flex;
     gap: 25px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 /* Each tab button */
@@ -292,6 +296,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 100%;
     min-height: 180px;
     align-items: start !important;
+    min-height: 150px;
+    padding-top: 10px;  
+    
+
+    /* keep items from stretching */
+    align-items: start;
+
+    /* OPTIONAL: tiny minimum space so Breakfast/Dinner don't look too empty */
+    min-height: 140px;   
+    row-gap: 14px;        
+    column-gap: 18px;
 
 }
 
