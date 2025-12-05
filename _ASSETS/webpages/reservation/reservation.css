@@ -100,15 +100,31 @@ body {
   width: fit-content;
   margin: 0 auto;
 }
+.reservation-bg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
-.img {
-  position: absolute;
-  top: -60px;            /* moves rectangle above reservation box */
-  left: 50%;
-  transform: translateX(-50%);
-  width: clamp(350px, 48vw, 700px);
-  z-index: 1;
+    /* Center vertically behind the box */
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Proportional width & height */
+    width: calc(100% + 120px);
+    height: calc(100% + 160px);
+
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 45px;
+
+    box-shadow:
+        0px 40px 80px rgba(0, 0, 0, 0.20),
+        0px 8px 22px rgba(255, 255, 255, 0.45) inset;
+
+    z-index: 0;
+    pointer-events: none;
 }
+
+
 
 
 /* -------------------------------------------------- */
@@ -136,16 +152,13 @@ body {
 }
 
 
-
-#step1,
-#step2 {
+#step1, #step2 {
+  min-height: 520px;   /* same height for both steps */
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  height: auto;
-  min-height: 420px;
+  justify-content: space-between;  /* keeps spacing natural */
 }
+
 
 /* -------------------------------------------------- */
 /* FORM FIELDS                                        */
@@ -155,6 +168,7 @@ body {
   position: relative;
   width: 100%;
 }
+
 
 select,
 input,
@@ -228,12 +242,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* Time field */
 #step2 .field:first-child {
   width: 100%;
+  max-width: 450px;        /* keeps consistent box width */
+
 }
 
 /* Special Request always full width */
 #step2 .field textarea {
   width: 100%;
-  height: 120px;
+  height: 100px;
   resize: none;
   padding: 14px 18px;
   border-radius: 16px;
@@ -241,28 +257,92 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-size: 16px;
 }
 
-/* Time select box */
-#time-select {
-  width: 100%;
-  border: 1.3px solid #ccc;
-  border-radius: 16px;
-  padding: 14px 18px;
-  background: #fff;
-  cursor: pointer;
-  box-sizing: border-box;
+/* ------------------------------ */
+/* TIME SECTION (matches sample)  */
+/* ------------------------------ */
+
+/* Label */
+#step2 .field label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
 }
 
-/* Time dropdown list */
-#time-options {
-  width: 100%;
-  margin-top: 6px;
-  border: 1.3px solid #ccc;
-  border-radius: 16px;
-  background: white;
-  max-height: 180px;
-  overflow-y: auto;
-  display: none;
-  box-sizing: border-box;
+/* Time tabs (Breakfast | Lunch | Dinner) */
+.time-tabs {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Each tab button */
+.time-tab {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 0;
+    color: #333;
+    border-bottom: 2px solid transparent;
+}
+
+.time-tab:hover {
+    color: #000;
+}
+
+/* Active tab has underline */
+.time-tab.active {
+    border-bottom: 2px solid #000;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Time grid container */
+.time-grid {
+  
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    min-height: 180px;
+    align-items: start !important;
+    min-height: 150px;
+    padding-top: 10px;  
+    
+
+    /* keep items from stretching */
+    align-items: start;
+
+    /* OPTIONAL: tiny minimum space so Breakfast/Dinner don't look too empty */
+    min-height: 140px;   
+    row-gap: 14px;        
+    column-gap: 18px;
+
+}
+
+/* Time slot buttons */
+.time-btn {
+    padding: 12px 0;
+    border-radius: 6px;
+    border: 1.5px solid #999;
+    background: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.time-btn:hover {
+    background: #ffd6e2 !important;
+}
+
+.time-btn.selected {
+    background: #ff94b3;
+    color: white;
+    font-weight: bold;
+    border-color: #ff94b3;
 }
 
 #time-options div {
@@ -305,6 +385,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 #calendar {
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   background: #fff;
   border-radius: 16px;
   padding: 14px 18px;
@@ -349,8 +431,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 #calendar-dates {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
 }
 
 #calendar-dates button {
