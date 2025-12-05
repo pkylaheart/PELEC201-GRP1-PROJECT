@@ -467,7 +467,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     transform: translateX(-50%);
 
     /* Position ABOVE the bundok */
-    bottom: -300px;  /* ← Move popup UP relative to the mountain */
+    bottom: -280px;  /* ← Move popup UP relative to the mountain */
 
     width: auto;
     height: auto;
