@@ -9,7 +9,11 @@
 
 body {
 <<<<<<< Updated upstream:01-HOMEPAGE/style.css
+<<<<<<< Updated upstream:01-HOMEPAGE/style.css
   background-color: #f9e7e7;
+=======
+  background-color: #fbf5f6;
+>>>>>>> Stashed changes:style.css
 =======
   background-color: #fbf5f6;
 >>>>>>> Stashed changes:style.css
@@ -294,8 +298,13 @@ body {
 }
 .reviewcard {
 <<<<<<< Updated upstream:01-HOMEPAGE/style.css
+<<<<<<< Updated upstream:01-HOMEPAGE/style.css
   width: 250px;
   height: 150px;
+=======
+  width: 30em;
+  height: 15em;
+>>>>>>> Stashed changes:style.css
 =======
   width: 30em;
   height: 15em;
@@ -343,6 +352,12 @@ body {
 }
 #doublepng {
   height: 49.9%;
+<<<<<<< Updated upstream:01-HOMEPAGE/style.css
+=======
+
+  border-radius: 0.2em;
+}
+>>>>>>> Stashed changes:style.css
 
   border-radius: 0.2em;
 }
