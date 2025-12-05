@@ -109,17 +109,14 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    /* Proportional width & height */
     width: calc(100% + 120px);
     height: calc(100% + 160px);
-
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(243, 243, 243, 0.35);
     border-radius: 45px;
 
     box-shadow:
-        0px 40px 80px rgba(0, 0, 0, 0.20),
+        0px 40px 80px rgba(0, 0, 0, 0.15),
         0px 8px 22px rgba(255, 255, 255, 0.45) inset;
-
     z-index: 0;
     pointer-events: none;
 }
@@ -465,15 +462,21 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* -------------------------------------------------- */
 
 .popup-overlay {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 180px;   /* adjust height above mountain */
-  display: flex;
-  justify-content: center;
-  z-index: 9999;
-  pointer-events: none;   /* overlay doesn’t block clicks */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Position ABOVE the bundok */
+    bottom: -300px;  /* ← Move popup UP relative to the mountain */
+
+    width: auto;
+    height: auto;
+
+    z-index: 9999;
+
+    pointer-events: none;
 }
+
 
 .popup-overlay.hidden {
   display: none;
