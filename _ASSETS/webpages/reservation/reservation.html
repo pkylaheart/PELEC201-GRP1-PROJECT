@@ -162,10 +162,17 @@
 
                 <!-- Step 2 -->
                 <div id="step2" style="display:none;">
-                    <div class="field" style="position:relative;">
-                    <label>Time</label>
-                    <div id="time-select">Select a time</div>
-                    <div id="time-options"></div>
+
+                    <div class="field time-field">
+                        <label><b>Time</b></label>
+
+                        <div class="time-tabs">
+                            <button class="time-tab active" data-group="breakfast">Breakfast</button>
+                            <button class="time-tab" data-group="lunch">Lunch</button>
+                            <button class="time-tab" data-group="dinner">Dinner</button>
+                        </div>
+
+                        <div class="time-grid" id="time-grid"></div>
                     </div>
 
                     <div class="field">

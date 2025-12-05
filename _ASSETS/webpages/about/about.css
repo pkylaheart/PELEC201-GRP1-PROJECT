@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f8dfe6;
+    background: linear-gradient(180deg, #f8dfe6 0%, #ffeef3 100%);
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
@@ -17,11 +17,9 @@ body {
 }
 
 .main-aboutbg {
-    position: fixed;
-    top: 100px;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: calc(100vh);
+    height: auto;
     z-index: 0;
     overflow: visible;
 }
@@ -30,7 +28,6 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    box-shadow: -1259px 0 148.3px 0 rgba(0, 0, 0, 0.66) inset;
     pointer-events: none;
     z-index: 5;
 }
@@ -103,7 +100,7 @@ body {
 }
 
 .about-text p {
-    color: #ffffff;
+    color: #080808;
     text-align: left;
     font-family: Inter;
     font-size: 23px;

@@ -241,28 +241,81 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-size: 16px;
 }
 
-/* Time select box */
-#time-select {
-  width: 100%;
-  border: 1.3px solid #ccc;
-  border-radius: 16px;
-  padding: 14px 18px;
-  background: #fff;
-  cursor: pointer;
-  box-sizing: border-box;
+/* ------------------------------ */
+/* TIME SECTION (matches sample)  */
+/* ------------------------------ */
+
+/* Label */
+#step2 .field label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
 }
 
-/* Time dropdown list */
-#time-options {
-  width: 100%;
-  margin-top: 6px;
-  border: 1.3px solid #ccc;
-  border-radius: 16px;
-  background: white;
-  max-height: 180px;
-  overflow-y: auto;
-  display: none;
-  box-sizing: border-box;
+/* Time tabs (Breakfast | Lunch | Dinner) */
+.time-tabs {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 12px;
+}
+
+/* Each tab button */
+.time-tab {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 0;
+    color: #333;
+    border-bottom: 2px solid transparent;
+}
+
+.time-tab:hover {
+    color: #000;
+}
+
+/* Active tab has underline */
+.time-tab.active {
+    border-bottom: 2px solid #000;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Time grid container */
+.time-grid {
+  
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    min-height: 180px;
+    align-items: start !important;
+
+}
+
+/* Time slot buttons */
+.time-btn {
+    padding: 12px 0;
+    border-radius: 6px;
+    border: 1.5px solid #999;
+    background: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.time-btn:hover {
+    background: #ffd6e2 !important;
+}
+
+.time-btn.selected {
+    background: #ff94b3;
+    color: white;
+    font-weight: bold;
+    border-color: #ff94b3;
 }
 
 #time-options div {
