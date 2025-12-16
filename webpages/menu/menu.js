@@ -55,8 +55,8 @@ const menuSwiper = new Swiper('.main-menu-carousel', {
 cardsSwiper.controller.control = menuSwiper;
 menuSwiper.controller.control = cardsSwiper;
 
-document.getElementById(".main-order-btn").addEventListener("click", function() {
-    document.getElementById(".menu-order-btn").scrollIntoView({
+document.getElementById("main-order-btn").addEventListener("click", function() {
+    document.getElementById("menu-order-btn").scrollIntoView({
         behavior: "smooth",
         block: "center"
     });

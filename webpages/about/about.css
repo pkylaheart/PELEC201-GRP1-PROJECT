@@ -45,7 +45,8 @@ body {
     display: flex;
     width: 100%;
     max-width: 1400px;
-    margin: 240px auto;
+    margin: 10px auto;
+    margin-bottom: 90px;
     padding: 60px 20px;
     justify-content: center;
     position: relative;
