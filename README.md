@@ -1,6 +1,3 @@
-Here’s a clean, professional **README.md** you can use for a Japanese restaurant website named **Kawa**, modeled after the structure you shared and tailored to your navigation items.
-
----
 
 # 🍣 Kawa Japanese Restaurant Website
 
@@ -101,4 +98,5 @@ You can easily customize the website by:
 
 This project is open for personal or commercial use.
 Feel free to modify and adapt it to suit your restaurant’s needs.
+
 
