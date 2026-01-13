@@ -1,0 +1,229 @@
+/* IMPORTING FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/* MATERIAL SYMBOLS FIX */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    display: inline-block;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+/* NO MORE BROKEN @IMPORT HERE */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FBF5F6;
+    scroll-behavior: smooth;
+}
+
+/* Your entire CSS below */
+.main-contact-sect {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+h1 {
+    font-size: 64px;
+    color: #FA6F96;
+    font-family: "Lilita One", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px auto 30px auto;
+}
+
+h2 {
+    font-size: 38px;
+    color: #FA6F96;
+    font-family: "Lilita One", sans-serif;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.deschead { text-align: left; }
+.detailshead { text-align: right; }
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1400px;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    max-width: 700px;
+}
+
+.description {
+    font-size: 18px;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+.right-column {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.details {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 21px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+}
+
+.form-row h3 {
+    font-size: 20px;
+    color: #FA6F96;
+    font-family: "Lilita One", sans-serif;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    height: 35px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #000;
+    background-color: #F3ACAC;
+    transition: 0.3s ease;
+}
+
+.form-row textarea {
+    padding: 10px;
+    height: 150px;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover {
+    border: 2px solid #FA6F96;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #FA6F96;
+}
+
+.kawa {
+    font-weight: bold;
+}
+
+.button-row {
+    width: 183px;
+    height: 45px;
+    padding: 11px 45px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 3px solid #C70742;
+    background-color: transparent;
+    font-family: "Lilita One", sans-serif;
+    font-size: 18px;
+    color: #C70742;
+    transition: 0.3s ease;
+}
+
+.button-row:hover {
+    background-color: #C70742;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+.crop-box {
+    width: 426px;
+    height: 276px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    border: #F3ACAC solid 2px;
+    margin: 0 auto;
+}
+
+.map-img {
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 30px;
+}
+
+.bottom-title {
+    color: #C70742;
+    font-family: "Lilita One";
+    font-size: 20px;
+    margin: 7px 0;
+}
+
+.icons-holder {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.25);
+}
