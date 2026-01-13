@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ===== Navigation buttons =====
     const navButtons = [
-        { selector: ".about_us-button", path: "about/about.html" },
-        { selector: ".view_menu-button", path: "menu/menu.html" },
-        { selector: ".button", path: "menu/menu.html" },
-        { selector: ".contact-btn", path: "contact/contact.html" }
+        { selector: ".about_us-button", path: "/about.html" },
+        { selector: ".view_menu-button", path: "/menu.html" },
+        { selector: ".button", path: "/menu.html" },
+        { selector: ".contact-btn", path: "/contact.html" }
     ];
 
     navButtons.forEach(btn => {
@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
             element.addEventListener("click", function() {
                 let path = btn.path;
 
-                // Detect if current page is inside _ASSETS/webpages
-                const isInWebpages = window.location.pathname.includes("/webpages");
+                // Detect if current page is inside Pages
+                const isInWebpages = window.location.pathname.includes("/src");
 
                 if (isInWebpages) {
                     // Pages inside _ASSETS/webpages: path relative to current folder
-                    path = "../" + btn.path;
+                    path = "../pages" + btn.path;
                 } else {
                     // Pages outside _ASSETS (like index.html): path relative to root
-                    path = "/webpages/" + btn.path;
+                    path = "src/pages/" + btn.path;
                 }
 
                 window.location.href = path;
@@ -44,12 +44,12 @@ document.addEventListener("DOMContentLoaded", function() {
             else if (text === 'Noodles and Grills') hash = 'noodles-grills';
             else if (text === 'Drinks') hash = 'drinks';
 
-            let path = 'menu/menu.html';
-            const isInWebpages = window.location.pathname.includes("/webpages");
+            let path = '/menu.html';
+            const isInWebpages = window.location.pathname.includes("/src");
             if (isInWebpages) {
-                path = "../" + path;
+                path = "../pages/" + path;
             } else {
-                path = "/webpages/" + path;
+                path = "src/pages/" + path;
             }
             window.location.href = path + (hash ? '#' + hash : '');
         });
